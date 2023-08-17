@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Case 01 Secound Step</title>
+    <style>
+        body>section{
+            width: 100vw;
+            height: 200vh;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        body>section>:first-child{
+            width: 100vw;
+            height: 100vh;
+            position: absolute;
+            top: 0;
+        }
+        body>section>:last-child{
+            width: 100vw;
+            height: 100vh;
+            position: absolute;
+            bottom: 0;
+
+        }
+        body>section>:first-child>:first-child{
+            width: 50vw;
+            height: 50vh;
+            position: absolute;
+            background-color: red;
+            left: 0;
+            top: 0;
+        }
+        body>section>:first-child>:nth-child(2){
+            width: 50vw;
+            height: 50vh;
+            position: absolute;
+            background-color: green;
+            right: 0;
+            top: 0;
+        }
+        body>section>:first-child>:nth-child(3) {
+            width: 50vw;
+            height: 50vh;
+            position: absolute;
+            background-color: orange;
+            left: 0;
+            bottom: 0;
+        }
+        body>section>:first-child>:nth-child(4) {
+            width: 50vw;
+            height: 50vh;
+            position: absolute;
+            background-color: deeppink;
+            right: 0;
+            bottom: 0;
+        }
+
+        body>section>:last-child>:first-child{
+            width: 50vw;
+            height: 50vh;
+            position: absolute;
+            background-color: red;
+            left: 0;
+            top: 0;
+        }
+        body>section>:last-child>:nth-child(2){
+            width: 50vw;
+            height: 50vh;
+            position: absolute;
+            background-color: green;
+            right: 0;
+            top: 0;
+        }
+        body>section>:last-child>:nth-child(3) {
+            width: 50vw;
+            height: 50vh;
+            position: absolute;
+            background-color: orange;
+            left: 0;
+            bottom: 0;
+        }
+        body>section>:last-child>:nth-child(4) {
+            width: 50vw;
+            height: 50vh;
+            position: absolute;
+            background-color: deeppink;
+            right: 0;
+            bottom: 0;
+        }
+        body>section>section>section>:first-child{
+            width: 170px;
+            height: 170px;
+            position: absolute;
+            background-color: white;
+            border-radius: 100%;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            top: 0;
+            margin :auto;
+        }
+        body>section>section>section>:first-child>div{
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            background-color: red;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            margin:auto;
+        }
+        body>section>section>:first-child>:nth-child(2){
+            width: 150px;
+            height: 150px;
+            background-color: white;
+            border-bottom-right-radius: 100%;
+        }
+        body>section>section>:nth-child(2)>:nth-child(2){
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            background-color: white;
+            border-bottom-left-radius: 100%;
+            right: 0;
+            top: 0;
+        }
+        body>section>section>:nth-child(3)>:nth-child(2){
+            width: 150px;
+            height: 150px;
+            background-color: white;
+            border-top-right-radius: 100%;
+            position: absolute;
+            bottom: 0;
+        }
+        body>section>section>:nth-child(4)>:nth-child(2){
+            width: 150px;
+            height: 150px;
+            background-color: white;
+            border-top-left-radius: 100%;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+        body>section>section>:first-child>:last-child{
+            width: 80px;
+            height: 80px;
+            background-color: white;
+            border-bottom-left-radius: 100%;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        body>section>section>:nth-child(2)>:last-child{
+            width: 80px;
+            height: 80px;
+            background-color: white;
+            border-bottom-right-radius: 100%;
+            position: absolute;
+        }
+        body>section>section>:nth-child(3)>:last-child{
+            width: 80px;
+            height: 80px;
+            background-color: white;
+            border-top-left-radius: 100%;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+
+        body>section>section>:nth-child(4)>:last-child{
+            width: 80px;
+            height: 80px;
+            background-color: white;
+            border-top-right-radius: 100%;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+        body>section>section>:nth-child(5){
+            width:150px;
+            height:150px;
+            background-color: white;
+            position: absolute;
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin :auto;
+        }
+
+        body>section>section>:nth-child(5)>div{
+            width:80px;
+            height:80px;
+            background-color: red;
+            position: absolute;
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin :auto;
+            border-radius: 100%;
+        }
+
+
+    </style>
+</head>
+<body>
+<section>
+    <section>
+        <section>
+            <div>
+            <div></div>
+        </div>
+            <div></div>
+            <div></div>
+        </section>
+        <section>   <div>
+            <div></div>
+        </div>
+            <div></div>
+            <div></div></section>
+        <section>   <div>
+            <div></div>
+        </div>
+            <div></div>
+            <div></div></section>
+        <section>   <div>
+            <div></div>
+        </div>
+            <div></div>
+            <div></div></section>
+        <div>
+            <div></div>
+        </div>
+    </section>
+    <section>
+        <section>   <div>
+            <div></div>
+        </div>
+            <div></div>
+            <div></div></section>
+        <section>   <div>
+            <div></div>
+        </div>
+            <div></div>
+            <div></div></section>
+        <section>   <div>
+            <div></div>
+        </div>
+            <div></div>
+            <div></div></section>
+        <section>   <div>
+            <div></div>
+        </div>
+            <div></div>
+            <div></div></section>
+        <div>
+            <div></div>
+        </div>
+    </section>
+</section>
+</body>
+</html>
