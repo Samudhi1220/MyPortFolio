@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS case 02</title>
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <link rel="stylesheet" href="8.0.1_normalize.css">
+    <style>
+        body>section{
+            width: 100vw;
+            height: 150vh;
+        }
+        body>section>:first-child>:nth-child(2)>li{
+            display: inline;
+            position: absolute;
+            word-spacing: 10px;
+             right: 0;
+            top: 0;
+        }
+        body>section>:nth-child(2)>aside{
+            width: 20vw;
+            height: 150vh;
+            background-color: blue;
+        }
+        body>section>:first-child{
+            width: 100vw;
+            height:8vh ;
+        }
+        body>section>:nth-child(2){
+            width: 100vw;
+            height: 150vh;
+            background-color: darkseagreen;
+        }
+        body>section>:nth-child(2)>section{
+            width: 80vw;
+            height: 150vh;
+            background-color: white;
+        }
+
+
+    </style>
+</head>
+<body>
+<section>
+    <section>
+        <h1>IJSE</h1>
+         <ul>
+            <li>Home</li>
+            <li>Services</li>
+            <li>Contacts</li>
+            <li>About Us</li>
+        </ul>
+    </section>
+<section>
+    <aside></aside>
+    <section>
+        <section>
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
+
+    </section>
+    <p></p>
+</section>
+
+</section>
+
+</body>
+</html>
