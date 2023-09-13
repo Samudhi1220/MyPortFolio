@@ -2,76 +2,85 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>CSS Case 01</title>
+    <title>CSS Case 06</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Case 05</title>
+    <link rel="stylesheet" href="assest/8.0.1_normalize.css">
     <meta name="viewport" content="width=device-width initial-scale=1">
-    <link rel="stylesheet" href="8.0.1_normalize.css">
 
     <style>
-        body>:first-child {
+        section{
             width: 100vw;
             height: 100vh;
             display: grid;
-            flex-direction:row;
-            grid-template-rows: 1fr 1fr 1fr;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-
-            background-color: white;
+            grid-template-rows: repeat(3,1fr);
+            grid-template-columns: repeat(4,1fr);
+            margin-bottom: 0;
+            margin-left: 0;
         }
-
-        body>section>div {
-            border: 1px ;
+        section>div{
+            border: 1px solid;
             box-sizing: border-box;
-
         }
         body{
             margin: 0;
         }
-        body>section>:first-child{
-            background-color: #ff253a;
+        section>:first-child{
+            grid-column: 1/3;
+            grid-row: 1/2;
+            background: url("assest/img/img.png");
+            background-size: cover;
         }
-        body>section>:first-child{
-            background-color: #ff253a;
-        } body>section>:nth-child(2){
-              background-color: #317c31;
-          } body>section>:nth-child(3){
-                background-color: orange;
-            } body>section>:nth-child(4){
-                  background-color: purple;
-              } body>section>:nth-child(5){
-                    background-color: pink;
-                } body>section>:nth-child(6){
-                      background-color: blue;
-                  } body>section>:nth-child(7){
-                        background-color: brown;
-                    } body>section>:nth-child(8){
-                          background-color: plum;
-                      } body>section>:nth-child(9){
-                            background-color: darkblue;
-                        } body>section>:nth-child(10){
-                              background-color: yellow;
-                          } body>section>:nth-child(11){
-                                background-color: darkseagreen;
-                            }
-                         body>section>:nth-child(12){
-                         background-color: lightblue;
-                         }
+        section>:nth-child(2){
+            background: url("assest/img/img_1.png");
+            background-size: cover;
+        }
+        section>:nth-child(3){
+            background: url("assest/img/img_2.png");
+            background-size: cover;
+            grid-column: 4/5;
+            grid-row: 1/4;
+        }
+        section>:nth-child(4){
+            background: url("assest/img/img_3.png");
+            background-size: cover;
+        }
+        section>:nth-child(5){
+            background: url("assest/img/img_4.png");
+            background-size: cover;
+        }
+        section>:nth-child(6){
+            background: url("assest/img/img_5.png");
+            background-size: cover;
+        }
+        section>:nth-child(7){
+            background: url("assest/img/img_6.png");
+            background-size: cover;
+        }
+        section>:nth-child(8){
+            background: url("assest/img/img_7.png");
+            background-size: cover;
+            grid-column: 2/4;
+            grid-row: 3/4;
+        }
+
     </style>
 </head>
 <body>
 <section>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
 </section>
 </body>
 </html>
