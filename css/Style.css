@@ -1,0 +1,85 @@
+header>h1:first-child{
+    flex-shrink: 0;
+    color: #161515;
+    font-family:"Libre Baskerville";
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 15px;
+    margin-left: 13px;
+    display: inline-block;
+}
+header>h1:nth-child(2){
+
+    flex-shrink: 0;
+    color: #E86161;
+    font-family: "Libre Baskerville";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: inline-block;
+    margin-top: 15px;
+    margin-left:0px;
+}
+header>nav{
+    position: absolute;
+    display:inline-block;
+    top: 0;
+    right: 0;
+
+}
+header>nav>ul>li{
+
+    display: inline-block;
+    margin-right: 30px;
+    color: #000;
+    font-family:Inter;
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+body{
+    background-image:url("../assest/img/bg.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 0.5s;
+    position: relative;
+}
+main>:first-child{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+main>:first-child>aside:nth-child(2){
+
+    position: absolute;
+    display: inline-block;
+    bottom: 0;
+    top: 200px;
+    right:50px;
+    margin: auto;
+
+}
+main>:first-child>aside>:nth-child(1){
+    color: #121111;
+    font-family: Inria;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+main>:first-child>aside>:nth-child(2){
+    color: #121111;
+    font-family: Limelight;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
