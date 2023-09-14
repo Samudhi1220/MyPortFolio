@@ -31,7 +31,6 @@ header>nav{
 
 }
 header>nav>ul>li{
-
     display: inline-block;
     margin-right: 30px;
     color: #000;
@@ -40,7 +39,6 @@ header>nav>ul>li{
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-
 }
 
 body{
@@ -82,4 +80,28 @@ main>:first-child>aside>:nth-child(2){
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+main > :first-child > img {
+    position: absolute;
+    width: 500px;
+    right: 50px;
+    margin: 0;
+    bottom: 90px;
+    opacity: 0.6;
+}
+main > :nth-child(2) {
+    height: 100vh;
+    position: relative;
+}
+
+main > :nth-child(2) > div {
+    position: absolute;
+    top: 0;
+    right: 178px;
+    margin: 0;
+}
+main > :nth-child(2) > div > :first-child {
+    display: inline-block;
+
+    margin: 0;
 }
