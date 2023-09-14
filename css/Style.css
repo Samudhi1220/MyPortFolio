@@ -100,8 +100,24 @@ main > :nth-child(2) > div {
     right: 178px;
     margin: 0;
 }
-main > :nth-child(2) > div > :first-child {
+main > :nth-child(2) > div:first-child > :first-child {
     display: inline-block;
-
+    color: #6B1E1E;
+    text-align: center;
+    font-family: "OFL Sorts Mill Goudy TT";
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0;
+}
+main > :nth-child(2) >div:first-child> :nth-child(2) {
+    display: inline-block;
+    color: #6B1E1E;
+    font-family:"OFL Sorts Mill Goudy TT";
+    font-size: 71px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
     margin: 0;
 }

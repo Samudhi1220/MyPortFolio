@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="8.0.1_normalize.css"> <meta name="viewport"
+                                                             content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <style>
+        section{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            justify-content: space-evenly;
+            left: 0;
+        }
+
+        div{
+            transition-duration: 2s;
+            transition-property: right;
+            position: relative;
+            width: 200px;
+            height: 50px;
+            background-color: purple;
+            right: 150px;
+            color: white;
+        }
+
+        div>img{
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+        }
+        div:hover{
+            transition-duration: 2s;
+            transition-property: right;
+            right: 0;
+        }
+
+    </style>
+
+</head>
+<body>
+<section>
+ <div>Menu one<img src="img/download.jpeg" height="227" width="222"/></div>
+    <div>Menu two<img src="img/download.png" height="225" width="225"/></div>
+    <div>Menu Tree<img src="img/download (1).png" height="227" width="222"/></div>
+    <div>Menu Four<img src="img/download (2).png" height="225" width="225"/></div>
+    <div>Menu five<img src="img/download (3).png" height="225" width="225"/></div>
+</section>
+
+
+
+</body>
+</html>
