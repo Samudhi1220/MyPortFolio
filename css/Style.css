@@ -93,17 +93,17 @@ main>:first-child>aside>:nth-child(2){
     font-weight: 400;
     line-height: normal;
 }
-main>section:first-child>div:first-child {
-  position: absolute;
-    background: black;
-    width: 400px;
-    height: 500px;
-    top: 0;
-    bottom:  350px;
-    right: 0;
-    left:650px;
-    margin: auto;
-}
+/*main>section:first-child>div:first-child {*/
+/*  position: absolute;*/
+/*    background: black;*/
+/*    width: 400px;*/
+/*    height: 500px;*/
+/*    top: 0;*/
+/*    bottom:  350px;*/
+/*    right: 0;*/
+/*    left:650px;*/
+/*    margin: auto;*/
+/*}*/
 main > :nth-child(2) {
     height: 100vh;
     position: relative;
@@ -134,8 +134,6 @@ main > section:first-child >div:nth-child(2)>h5:first-child{
     font-weight: 400;
     letter-spacing: 1px;
     margin-bottom: 0;
-
-
 }
 main > section:first-child >div:nth-child(2)>h4{
     font-size: 2.4rem;
@@ -145,16 +143,17 @@ main > section:first-child >div:nth-child(2)>h4{
     font-weight: 400;
     letter-spacing: 1px;
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 15px;
 }
 main > section:first-child>div:nth-child(2)>p{
+
     font-size: 1.3rem;
     font-weight: 400;
     font-family: "Roboto", sans-serif;
     color: #979797;
-    margin-right: 600px;
-    margin-top: 7px;
+    width: 600px;
     word-spacing: 2px;
+    margin-bottom: 15px;
 
 }
 main>section:first-child>div:nth-child(2)>button{
@@ -174,4 +173,75 @@ position: relative;
     top: 150px;
 
 }
+
+section:nth-child(2)>div:first-child>h1{
+
+    display: flex;
+    width: 571px;
+    height: 109px;
+    transform: rotate(-90deg);
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #FFB400;
+    font-family: Merriweather, serif;
+    font-size: 111px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    position: relative;
+    right: 150px;
+
+}
+section:nth-child(2)>div:nth-child(2)>h2:first-child{
+    color: black;
+    font-family: Inter;
+    font-size: 58px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1.6px;
+}
+section:nth-child(2)>div:nth-child(2)>h2:nth-child(2){
+    position: relative;
+    color: #FFB400;
+    font-family: Inter;
+    font-size: 74px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 0;
+    margin-bottom: 0;
+   left: 275px;
+    bottom: 125px;
+    letter-spacing: 2px;
+}
+section:nth-child(2)>div:nth-child(2)>p{
+
+    color: black;
+    font-family: Josefin Sans;
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+    position: relative;
+    bottom: 100px;
+}
+section:nth-child(2)>div:nth-child(2){
+    position: relative;
+    width: 400px;
+    height: 456px;
+    flex-shrink: 0;
+    left: 900px;
+    top: 0;
+
+
+}
+section:nth-child(2)>div:nth-child(2)>div{
+width: 400px;
+
+}
+
+
+
 
