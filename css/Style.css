@@ -93,13 +93,16 @@ main>:first-child>aside>:nth-child(2){
     font-weight: 400;
     line-height: normal;
 }
-main > :first-child > img {
-    position: absolute;
-    width: 500px;
-    right: 50px;
-    margin: 0;
-    bottom: 90px;
-    opacity: 0.6;
+main>section:first-child>div:first-child {
+  position: absolute;
+    background: black;
+    width: 400px;
+    height: 500px;
+    top: 0;
+    bottom:  350px;
+    right: 0;
+    left:650px;
+    margin: auto;
 }
 main > :nth-child(2) {
     height: 100vh;
@@ -113,6 +116,8 @@ main > :nth-child(2) > div {
     margin: 0;
 }
 main > section:first-child> div:nth-child(2) >h1 {
+
+    position:relative;
     color: #ffb400;
     font-family:"candal";
     letter-spacing: 3px;
@@ -129,7 +134,7 @@ main > section:first-child >div:nth-child(2)>h5:first-child{
     font-weight: 400;
     letter-spacing: 1px;
     margin-bottom: 0;
-    margin-top: 160px;
+
 
 }
 main > section:first-child >div:nth-child(2)>h4{
@@ -158,9 +163,15 @@ main>section:first-child>div:nth-child(2)>button{
     border: 2px solid #ffb400;
     transition: all 0.5s;
 
-
 }
 main>section:first-child>div:nth-child(2)>div{
-    display: inline-block;
-    margin-left: 65px;
+    position: relative;
+    left: 120px;
+    bottom: 50px;
 }
+main>section:first-child>div:nth-child(2){
+position: relative;
+    top: 150px;
+
+}
+
