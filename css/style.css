@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Josefin+Sans&family=Libre+Baskerville:wght@700&family=Roboto:wght@500&display=swap');
+
+/*----------------------------------------Header-----------------------------------------------------*/
+
+header {
+    position: sticky;
+
+    height: 90px;
+}
+
+header > h1 {
+    position: relative;
+    top: 20px;
+    left: 50px;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    background: linear-gradient(180deg, #FFB400 54.17%, #FFB400 99.99%, rgba(255, 180, 0, 0.00) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
+header > nav {
+    position: absolute;
+    display: inline-block;
+    right: 50px;
+    margin-top: 16px;
+}
+
+header > nav > ul {
+    display: inline-block;
+    margin: 0;
+}
+
+header > nav > ul > li {
+    display: inline-block;
+    margin-right: 80px;
+    color: #000;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+header > nav > a {
+    padding: 1rem 4rem;
+    background-color: rgb(255, 180, 0);
+    border: 2px solid rgb(255, 180, 0);
+    font-family: Roboto, sans-serif;
+    font-size: 1.4rem;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    transition: all 0.5s ease 0s;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 18px;
+}
+
+/*----------------------------------------Main-----------------------------------------------------*/
+
+main > :first-child {
+    position: relative;
+}
+
+.introduc {
+    margin-left: 50px;
+    margin-top: 338px;
+    display: inline-block;
+    margin-bottom: 25px;
+}
+
+main > :first-child > img {
+    /*position: relative;*/
+    /*left: 900px;*/
+    /*top: 80px;*/
+    position: absolute;
+    right: 150px;
+    top: 50px;
+}
+
+.introduc > h5 {
+    color: #000;
+    font-family: 'Bree Serif', serif;
+    font-size: 53px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    margin: 0;
+}
+
+.introduc > h1 {
+    color: #FFB400;
+    font-family: 'Bree Serif', serif;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+}
+
+.introduc > h4 {
+    color: #000;
+    font-family: 'Bree Serif', serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 0.1;
+    margin: 0;
+}
+
+.introduc > p {
+    color: #727374;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 200;
+    margin-top: 45px;
+}
+
+.introduc > a {
+    position: relative;
+    padding: 8px;
+    background-color: #ffb400;
+    border: 2px solid #ffb400;
+    transition: all 0.5s;
+    border-radius: 36px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    bottom: 25px;
+}
+
+.introduc > div {
+    position: relative;
+    display: inline-block;
+    left: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+/*-----------------------------------------------------about me-----------------------------------------------------*/
+.secound-section {
+    background: #222;
+    padding-top: 65px;
+}
+
+.secound-section > :first-child {
+    position: relative;
+    margin-left: 60px;
+    width: 530px;
+    height: 630px;
+    flex-shrink: 0;
+    background: #222;
+    box-shadow: 4px 4px 0 6px #FFB400;
+    display: inline-block;
+    margin-bottom: 100px;
+}
+
+.secound-section > :first-child > img {
+    position: relative;
+    left: 50px;
+    margin-top: 20px;
+}
+
+.secound-section > h1 {
+    display: inline-block;
+    width: 571px;
+    height: 109px;
+    transform: rotate(-90deg);
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #FFB400;
+    font-family: "Merriweather", sans-serif;
+    font-size: 121px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+    position: relative;
+    right: 160px;
+    bottom: 268px;
+}
+
+.interesting-me {
+    display: inline-block;
+    width: 505px;
+    height: 456px;
+    /* flex-shrink: 0; */
+    position: absolute;
+    right: 50px;
+}
+
+.interesting-me > h2 {
+    color: #FFF;
+    font-family: "Inter", sans-serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0;
+    display: inline-block;
+}
+
+.interesting-me > h1 {
+    color: #FFB400;
+    font-family: "Inter", sans-serif;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+    display: inline-block;
+    margin-left: 8px;
+}
+
+.interesting-me > :nth-child(3) {
+    width: 150px;
+    height: 5px;
+    flex-shrink: 0;
+    stroke-width: 5px;
+    background: #FFB400;
+    margin-left: 5px;
+}
+
+.interesting-me > p {
+    color: #8f8f8f;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+    margin-top: 50px;
+}
+
+.count {
+    display: inline-block;
+
+}
+
+.count > h1 {
+    color: #FFF;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 95px;
+    font-style: normal;
+    font-weight: 500;
+    display: inline-block;
+    margin-left: 70px;
+    margin-bottom: 0;
+    position: relative;
+    bottom: 40px;
+    right: 60px;
+}
+
+.count > div > h2 {
+    color: #FFB400;
+    font-family: "Inter", sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+    display: inline-block;
+    margin-left: 70px;
+    margin-top: 0;
+    position: relative;
+    bottom: 40px;
+    right: 60px;
+}
