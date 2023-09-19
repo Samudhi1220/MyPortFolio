@@ -29,8 +29,7 @@
       background-color: #317c31;
     }
     section>div:nth-child(2) {
-        transition-property: all;
-        transition-duration: 2s;
+
       position: absolute;
       top: 0;
       bottom: 0;
@@ -45,16 +44,18 @@
     }
     div>h1{
         position: absolute;
-        top: 250px;
-        right: 0;
-        left: 220px;
-        bottom: 0;
+        top: 50%;
+        left: 50%;
+        text-align: center;
+        color: white;
+        font-weight: bold;
         margin: 0;
+        transform: translate(-50%,-50%);
     }
 
     section >div:nth-child(2):hover{
         transition-duration: 2s;
-        transition-property: right;
+        transition-property: all;
         transform: rotate(360deg);
     }
 
