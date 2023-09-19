@@ -286,6 +286,7 @@ main > :first-child > img {
     padding-top: 45px;
     margin-left: 80px;
     cursor: pointer;
+    margin-bottom: 35px;
 
 }
 .resume::before {
@@ -293,7 +294,7 @@ main > :first-child > img {
     position: absolute;
     width: 18px;
     height: 18px;
-    background:grey;
+    background:#000000;
     border-radius: 50%;
     left: 42px;
     top: 30px;
@@ -336,6 +337,9 @@ main > :first-child > img {
 .resume:hover::before {
     background: #FFB400;
 }
+.resume:hover::after {
+    background: #FFB400;
+}
 
 .resume:hover .date {
     color: #FFB400;
@@ -375,4 +379,9 @@ main > :first-child > img {
     margin-left: 15px;
 
 }
+.third-section>:nth-child(5){
+    margin-left: 132px;
+}
+
+
 
