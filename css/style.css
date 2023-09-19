@@ -382,6 +382,13 @@ main > :first-child > img {
 .third-section>:nth-child(5){
     margin-left: 132px;
 }
+.forth-section.skill{
+    display: inline-block;
+    width: 505px;
+    height: 456px;
 
+    position: absolute;
+    right: 50px;
+}
 
 
