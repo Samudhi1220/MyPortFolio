@@ -273,3 +273,24 @@ main > :first-child > img {
     bottom: 40px;
     right: 60px;
 }
+.third-section{
+    padding-left: 80px;
+}
+.resume {
+    position: relative;
+    padding-left: 75px;
+    padding-bottom: 68px;
+    padding-top: 40px;
+    cursor: pointer;
+}
+.resume::before {
+    content: '';
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    background:#FFB400 ;
+    border-radius: 50%;
+    left: -6px;
+    top: 30px;
+    transition: .3s;
+}
