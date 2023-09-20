@@ -814,11 +814,12 @@ position: relative;
     padding-top: 50px;
     padding-left: 80px;
     padding-right: 80px;
+    background: #FFB400;
 }
 .services-section h1{
-    color: #FFB400;
+    color: #FFFFFF;
     font-family: "Merriweather", sans-serif;
-    font-size: 70px;
+    font-size: 80px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -829,7 +830,7 @@ position: relative;
 
 }
 .services-section h2{
-    color: #bdc3c7;
+    color: #2E2F2E;
     font-family: "Merriweather", sans-serif;
     font-size: 80px;
     font-style: normal;
@@ -838,6 +839,52 @@ position: relative;
     display: inline-block;
     margin: 0;
     margin-left: 20px;
+}
+.service-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.services{
+    width: 400px;
+    height: 550px;
+    background-color:#2E2F2E;
+    margin-left: 30px;
+}
+.services div{
+
+    width: 110px;
+    height: 110px;
+    padding-left: 30px;
+    border: 2px solid #FFB400;
+    margin: auto;
+    margin-top: 70px;
+}
+.services div>img{
+    width: 70px;
+    padding-top: 20px;
+}
+.services h2{
+    color: #FFF;
+    text-align: center;
+    font-family: "Josefin Sans", sans-serif;
+    padding-top: 50px;
+    padding-left: 120px;
+    font-size: 17px;
+}
+.services p{
+    color: #FFF;
+    text-align: center;
+    font-family: "Merriweather",sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 
