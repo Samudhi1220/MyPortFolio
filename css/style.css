@@ -527,19 +527,14 @@ main > :first-child > img {
     line-height: normal;
     text-align: center;
     margin: 0;
+}
+/*.list-4>div>h4{*/
+/*    text-align: center;*/
+/*    font-family: "Roboto",sans-serif;*/
+/*    padding-top: 5px;*/
+/*}*/
 
-}
-.main-title>h1:nth-child(3){
-   position: relative;
-    left: 300px;
-    bottom: 80px;
-}
-.main-title>h1:nth-child(2){
-    position: relative;
-    left: 10px;
-    text-align: center;
 
-}
 
 
 
