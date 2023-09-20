@@ -391,6 +391,24 @@ background:#FFB400 ;
     padding-top: 40px;
     margin: 0;
 }
+.title h1 {
+    color: #FFB400;
+    font-family: "Merriweather", sans-serif;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    margin: 0;
+}
+
+.skill-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
 
 
 .fifth-section>h1{
