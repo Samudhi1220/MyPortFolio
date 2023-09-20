@@ -490,7 +490,7 @@ main > :first-child > img {
     margin: 0;
     padding-top: 30px;
 }
-.fifth-section>div{
+.fifth-section>section>div{
     width: 125px;
     height: 246px;
     flex-shrink: 0;
@@ -504,7 +504,8 @@ main > :first-child > img {
 
 }
 .fifth-section>div>h4{
-
+text-align: center;
+   padding-top: 160px;
 }
 
 
