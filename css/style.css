@@ -503,11 +503,22 @@ main > :first-child > img {
     margin-left: 42px;
 
 }
-.fifth-section>div>h4{
-text-align: center;
-   padding-top: 160px;
+
+
+.sixth-section{
+    background: #2E2F2E;
 }
 
+.maintitle h1 {
+    color: #FFB400;
+    font-family: "Merriweather", sans-serif;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    margin: 0;
+}
 
 
 
