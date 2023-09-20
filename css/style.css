@@ -472,16 +472,28 @@ text-align: center;
 .skill:nth-child(3)>div:nth-child(2){
     margin-left: 130px;
 }
-.fifth-section>h1{
-    color: #FFB400;
-    font-family: "Merriweather",sans-serif;
-    font-size: 89px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    padding-top: 20px;
-    text-align: center;
-
+.fifth-section{
+background:#FFB400 ;
 }
+/*.fifth-section>h1{*/
+/*    color: #FFB400;*/
+/*    font-family: "Merriweather",sans-serif;*/
+/*    font-size: 89px;*/
+/*    font-style: normal;*/
+/*    font-weight: 700;*/
+/*    line-height: normal;*/
+/*    padding-top: 20px;*/
+/*    text-align: center;*/
+
+/*}*/
+/*.fifth-section>div{*/
+/*    width: 135px;*/
+/*    height: 244px;*/
+/*    flex-shrink: 0;*/
+/*    background: #FFB400;*/
+/*    stroke-width: 2px;*/
+/*    stroke: #FFF;*/
+/*    border-radius: 30%;*/
+/*}*/
 
 
