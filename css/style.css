@@ -509,10 +509,11 @@ main > :first-child > img {
 }
 
 
-.sixth-section{
+.sixth-section {
     background: #2E2F2E;
 }
-.main-title{
+
+.main-title {
     padding-top: 50px;
     margin: 0;
     padding-bottom: 10px;
@@ -524,26 +525,27 @@ main > :first-child > img {
     font-family: "Merriweather", sans-serif;
     font-size: 70px;
     font-style: normal;
-    font-weight:600;
+    font-weight: 600;
     line-height: normal;
     text-align: center;
     margin: 0;
 
 }
 
-.main-title h2{
+.main-title h2 {
     color: #FFB400;
     font-family: "Merriweather", sans-serif;
     font-size: 70px;
     font-style: normal;
-    font-weight:600;
+    font-weight: 600;
     line-height: normal;
     margin: 0;
     display: inline-block;
 }
-.main-title h3{
+
+.main-title h3 {
     color: #FFF;
-    font-family: "Merriweather",sans-serif;
+    font-family: "Merriweather", sans-serif;
     font-size: 80px;
     font-style: normal;
     font-weight: 700;
@@ -551,6 +553,136 @@ main > :first-child > img {
     display: inline-block;
     margin: 0;
     margin-left: 20px;
+}
+
+.list-4 > div > h4 {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    padding-top: 10px;
+}
+
+.list-4 > div > img {
+    width: 70px;
+    line-height: 60px;
+    padding-left: 30px;
+}
+
+.work {
+    width: 500px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-right: 30px;
+    margin-bottom: 20px;
+    transition: transform 0.5s;
+}
+
+.work:hover {
+    transform: scale(1.2);
+}
+
+.work img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    display: block;
+    transition: transform 0.5s;
+    opacity: 0.9;
+    object-fit: cover;
+}
+
+.layer {
+    width: 100%;
+    height: 0;
+    border-radius: 8px;
+    position: absolute;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 20px;
+    transition: height 0.5s;
+    background: #bdc3c7;
+    background: -webkit-linear-gradient(to bottom, #394049, #bdc3c7);
+    background: linear-gradient(to bottom, #696258, #bdc3c7);
+    opacity: 0.8;
+}
+
+.layer h3 {
+    font-weight: bold;
+    color: #FFB400;
+/margin-bottom: 60px;/
+position: relative;
+    right: 35px;
+}
+
+.layer a {
+    margin-top: 20px;
+    color: #FFB400;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 60px;
+    background: linear-gradient(to top, #434343, #000000);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+    right: 35px;
+    bottom: 30px;
+}
+
+.assignment:hover img {
+    transform: scale(1.1);
+}
+
+.work:hover .layer {
+    height: 100%;
+
+}
+
+.all-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.all-img-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.all-img-2 > .work {
+    display: inline-block;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+.git-logo > h4 {
+    font-size: 22px;
+    font-weight: 300;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+.git-logo > i {
+    position: relative;
+    color: #FFFFFF;
+    font-size: 40px;
+    left: 320px;
+    margin-top: 50px;
+    text-align: center;
+    margin-left: 380px;
 }
 
 .list-4>div>h4{
@@ -571,8 +703,8 @@ main > :first-child > img {
 }
 .my-assignment>h1{
     color: #FFB400;
-    font-family: "Merriweather", sans-serif;
-    font-size: 89px;
+    font-family:"Roboto", sans-serif;
+    font-size: 92px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -661,6 +793,51 @@ main > :first-child > img {
 .assignment-list{
     padding-top: 80px;
     padding-bottom: 20px;
+}
+.certificates{
+    background: #2E2F2E;
+    padding-bottom: 20px;
+}
+.certificates h1{
+    color: #FFB400;
+    font-family:"Roboto", sans-serif;
+    font-size: 92px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    margin: 0;
+    padding-top: 30px;
+}
+.services-section{
+    padding-bottom: 60px;
+    padding-top: 50px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+.services-section h1{
+    color: #FFB400;
+    font-family: "Merriweather", sans-serif;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    display: inline-block;
+    margin-left: 250px;
+
+
+}
+.services-section h2{
+    color: #bdc3c7;
+    font-family: "Merriweather", sans-serif;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: inline-block;
+    margin: 0;
+    margin-left: 20px;
 }
 
 
