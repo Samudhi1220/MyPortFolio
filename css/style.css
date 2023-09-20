@@ -508,16 +508,34 @@ main > :first-child > img {
 .sixth-section{
     background: #2E2F2E;
 }
+.main-title{
+    padding-top: 50px;
+    margin: 0;
+    padding-bottom: 10px;
+    text-align: center;
+}
 
-.maintitle h1 {
+.main-title h1 {
     color: #FFB400;
     font-family: "Merriweather", sans-serif;
-    font-size: 80px;
+    font-size: 70px;
     font-style: normal;
-    font-weight: 700;
+    font-weight:600;
     line-height: normal;
     text-align: center;
     margin: 0;
+
+}
+.main-title>h1:nth-child(3){
+   position: relative;
+    left: 300px;
+    bottom: 80px;
+}
+.main-title>h1:nth-child(2){
+    position: relative;
+    left: 10px;
+    text-align: center;
+
 }
 
 
