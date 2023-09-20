@@ -432,7 +432,7 @@ background: #222;
     line-height: normal;
     text-align: center;
 }
-.skill>div>h2:nth-child(2){
+.skill>div:first-child>h2:nth-child(2){
     display: inline-block;
     color: #FFB400;
     font-family: "Merriweather",sans-serif;
@@ -483,4 +483,5 @@ text-align: center;
     text-align: center;
 
 }
+
 
