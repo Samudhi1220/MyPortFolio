@@ -386,8 +386,13 @@ main > :first-child > img {
 
 .fifth-section{
 background:#FFB400 ;
-
 }
+.title {
+    padding-top: 40px;
+    margin: 0;
+}
+
+
 .fifth-section>h1{
     color: #2E2F2E;
     font-family: "Merriweather",sans-serif;
