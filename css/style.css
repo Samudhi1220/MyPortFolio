@@ -409,6 +409,38 @@ background:#FFB400 ;
     padding-top: 60px;
     padding-bottom: 60px;
 }
+.skill {
+    width: 400px;
+    height: 550px;
+    background-color: black;
+    border-radius: 32px;
+    margin-left: 30px;
+}
+
+.skill-title {
+    text-align: center;
+}
+
+.skill-title > h1 {
+    color: #FFF;
+    font-family: "Merriweather", sans-serif;
+    font-size: 31px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: inline-block;
+}
+
+.skill-title > h2 {
+    color: #FFB400;
+    font-family: "Merriweather", sans-serif;
+    font-size: 31px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: inline-block;
+    margin-left: 3px;
+}
 
 
 .fifth-section>h1{
