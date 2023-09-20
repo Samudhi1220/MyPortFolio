@@ -527,12 +527,36 @@ main > :first-child > img {
     line-height: normal;
     text-align: center;
     margin: 0;
+
 }
-/*.list-4>div>h4{*/
-/*    text-align: center;*/
-/*    font-family: "Roboto",sans-serif;*/
-/*    padding-top: 5px;*/
-/*}*/
+
+.main-title h2{
+    color: #FFB400;
+    font-family: "Merriweather", sans-serif;
+    font-size: 70px;
+    font-style: normal;
+    font-weight:600;
+    line-height: normal;
+    margin: 0;
+    display: inline-block;
+}
+.main-title h3{
+    color: #FFF;
+    font-family: "Merriweather",sans-serif;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: inline-block;
+    margin: 0;
+    margin-left: 20px;
+}
+
+.list-4>div>h4{
+    text-align: center;
+    font-family: "Roboto",sans-serif;
+    padding-top: 5px;
+}
 
 
 
