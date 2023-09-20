@@ -564,6 +564,28 @@ main > :first-child > img {
     line-height: 60px;
     padding-left: 30px;
 }
+.my-assignment>h1{
+    color: #FFB400;
+    font-family: "Merriweather", sans-serif;
+    font-size: 89px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    margin: 0;
+    padding-top: 30px;
+}
+.assignment{
+    width: 200px;
+    height: 200px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    border: 3px solid #2E2F2E;
+    display: inline-block;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 120px;
+}
 
 
 
