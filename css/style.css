@@ -492,6 +492,7 @@ main > :first-child > img {
 }
 .list-4{
     padding-left: 60px;
+
 }
 
 .list-4 > div {
@@ -502,7 +503,7 @@ main > :first-child > img {
     border-radius: 40px;
     border: 2px solid #2E2F2E;
     display: inline-block;
-    margin-top: 40px;
+    margin-top: 30px;
     margin-bottom: 50px;
     margin-left: 150px;
 }
@@ -555,10 +556,14 @@ main > :first-child > img {
 .list-4>div>h4{
     text-align: center;
     font-family: "Roboto",sans-serif;
-    padding-top: 5px;
+    padding-top: 10px;
 }
 
-
+.list-4>div>img{
+    width: 70px;
+    line-height: 60px;
+    padding-left: 30px;
+}
 
 
 
