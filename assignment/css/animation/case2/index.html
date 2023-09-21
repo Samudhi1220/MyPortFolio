@@ -1,41 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-  <meta name="viewport" content="width=device-width initial-scale=1.0 user-scalable=no">
-  <link rel="stylesheet" href="css/8.0.1_normalize.css">
+  <meta charset="UTF-8">
+  <title>CSS Slider Animation</title>
+  <link href="/assets/lib/normalize.css" rel="stylesheet">
+  <meta content="width=device-width initial-scale=1" name="viewport">
+
   <style>
-  section{
-   width: 100vw;
-      height: 100vh;
-  }
-  div{
-      width: 700px;
-      height: 700px;
+    main {
+      width: 900px;
+      height: 480px;
+      box-shadow: 1px 3px 5px 1px #736060;
       position: absolute;
       left: 0;
       right: 0;
+      bottom: 0;
+      top: 0;
       margin: auto;
-  }
-  div>img{
- position: absolute;
-      right: 0;
+      overflow: hidden;
+    }
+
+    main > section {
+      height: 100%;
+      width: 500%;
+      display: flex;
+      animation-name:animation;
+      animation-duration: 10s;
+      animation-delay: 5s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      animation-direction: alternate;
+    }
+
+    main > section > section {
+      height: 100%;
+      width: 100%;
+    /background-color: #ff4334;/
+    }
+
+    main > section > section:nth-child(1) {
+      background: url("assest/img/images (1).jpeg");
+      background-size: cover;
+      background-position: center;
+    }
+
+    main > section > section:nth-child(2) {
+      background: url("assest/img/images (2).jpeg");
+      background-size: cover;
+      background-position: center;
+    }
+
+    main > section > section:nth-child(3) {
+      background: url("assest/img/images (4).jpeg");
+      background-size: cover;
+      background-position: center;
+    }
+
+    main > section > section:nth-child(4) {
+      background: url("assest/img/images (5).jpeg");
+      background-size: cover;
+      background-position: center;
+    }
 
 
-  }
+    @keyframes animation {
+      0%,20% {
+        transform: translate(0)
+      }
+      25%,45% {
+        transform: translate(-25%)
+      }
+      50%,70% {
+        transform: translate(-50%)
+      }
+      75%,100% {
+        transform: translate(-75%)
+      }
+    }
+
   </style>
 </head>
 
 <body>
-<section>
-  <div>
-    <img src="img/images (1).jpeg" alt="">
-    <img src="img/images (2).jpeg" alt="">
-    <img src="img/images (3).jpeg" alt="">
-    <img src="img/images (4).jpeg" alt="">
-    <img src="img/images (5).jpeg" alt="">
-  </div>
-</section>
+<main>
+  <section>
+    <section></section>
+    <section></section>
+    <section></section>
+    <section></section>
+  </section>
+</main>
 </body>
 </html>
