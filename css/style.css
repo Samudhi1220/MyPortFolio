@@ -903,7 +903,7 @@ position: relative;
 .services h2{
     color: #FFF;
     text-align: center;
-    font-family: "Josefin Sans", sans-serif;
+    font-family: "Merriweather ", sans-serif;
     padding-top: 50px;
     padding-left: 120px;
     font-size: 17px;
@@ -911,15 +911,15 @@ position: relative;
 .services p{
     color: #FFF;
     text-align: center;
-    font-family: "Merriweather",sans-serif;
-    font-size: 15px;
+    font-family: "Josefin Sans",sans-serif;
+    font-size: 17px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     padding-top: 10px;
     padding-left: 40px;
     padding-right: 40px;
-    word-spacing: 2px;
+    word-spacing: 3px;
 }
 .contact-title > h2 {
     color: #2E2F2E;
