@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <meta name="viewport" content="width=device-width initial-scale=1.0 user-scalable=no">
+  <link rel="stylesheet" href="css/8.0.1_normalize.css">
+
+  <style>
+      body{
+          position: relative;
+      }
+    section{
+      width: 100vw;
+      height: 100vh;
+      position: relative;
+    }
+    div{
+        position: relative;
+      width: 300px;
+      height: 100px;
+      border-radius: 30px;
+      background-color: #ff253a;
+        animation-name: anima;
+        animation-duration: 2s;
+        animation-iteration-count: 5;
+        animation-direction: inherit;
+
+
+    }
+    @keyframes anima {
+        0%{
+            color: plum;
+      left: 0;
+            top: 0;
+            background-color: pink;
+
+        }
+        25%{
+
+         left:1150px;
+            top: 0;
+            transform: rotate(180deg);
+            background-color: #0095ff;
+
+        }
+        50%{
+        left: 1150px;
+            top: 670px;
+            transform: rotate(360deg);
+            background-color: yellow;
+        }
+        75%{
+            color: purple;
+            top: 670px;
+            left:0;
+            transform:rotate(180deg);
+            background-color: purple;
+        }
+        100%{
+           left: 0;
+            top: 0;
+            transform: rotate(360deg);
+            background-color: gold;
+        }
+    }
+
+  </style>
+</head>
+<body>
+<section>
+  <div></div>
+</section>
+</body>
+</html>
