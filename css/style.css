@@ -515,7 +515,6 @@ main > :first-child > img {
     font-family: "Merriweather",sans-serif;
     padding-top: 10px;
     font-size: 19px;
-
 }
 
 .list-4 > div > img {
@@ -921,11 +920,11 @@ position: relative;
     font-size: 17px;
     font-style: normal;
     font-weight: 400;
-    line-height: normal;
     padding-top: 10px;
     padding-left: 40px;
     padding-right: 40px;
     word-spacing: 3px;
+    line-height: 20px;
 }
 .contact-title > h2 {
     color: #2E2F2E;
