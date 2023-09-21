@@ -186,7 +186,8 @@ main > :first-child > img {
     margin: 0;
     position: relative;
     right: 160px;
-    bottom: 268px;
+    bottom: 400px;
+
 }
 
 .interesting-me {
@@ -466,8 +467,8 @@ main > :first-child > img {
 
 .skill-type > h4 {
     color: #FFF;
-    font-family: "Merriweather", sans-serif;
-    font-size: 20px;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 25px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
