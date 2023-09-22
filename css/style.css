@@ -10,7 +10,7 @@ header {
 
 header > h1 {
     position: relative;
-    top: 20px;
+    top: 35px;
     left: 50px;
     margin: 0;
     font-family: "Roboto", sans-serif;
@@ -29,7 +29,7 @@ header > nav {
     position: absolute;
     display: inline-block;
     right: 50px;
-    margin-top: 16px;
+    margin-top: 25px;
 }
 
 header > nav > ul {
@@ -69,19 +69,32 @@ main > :first-child {
 }
 
 .introduc {
-    margin-left: 50px;
-    margin-top: 338px;
-    display: inline-block;
-    margin-bottom: 25px;
+
+    left: 80px;
+    top: 270px;
+    position: relative;
+    bottom: 25px;
+
+    right: 0;
+    padding-bottom: 55px;
 }
 
-main > :first-child > img {
-    /*position: relative;*/
-    /*left: 900px;*/
-    /*top: 80px;*/
-    position: absolute;
-    right: 150px;
-    top: 50px;
+main > section:first-child>img:nth-child(3){
+    position: relative;
+    top: 600px;
+    left: 300px;
+
+}
+main>section:first-child>img:first-child{
+position: relative;
+    top: 220px;
+    left: 80px;
+
+}
+main>section:first-child>img:nth-child(2){
+position: relative;
+    left: 1150px;
+    top: 600px;
 }
 
 .introduc > h5 {
@@ -924,7 +937,7 @@ position: relative;
     padding-left: 40px;
     padding-right: 40px;
     word-spacing: 3px;
-    line-height: 20px;
+    line-height: 22px;
 }
 .contact-title > h2 {
     color: #2E2F2E;
