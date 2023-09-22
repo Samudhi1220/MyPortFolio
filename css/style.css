@@ -10,7 +10,7 @@ header {
 
 header > h1 {
     position: relative;
-    top: 35px;
+    top: 20px;
     left: 50px;
     margin: 0;
     font-family: "Roboto", sans-serif;
@@ -29,7 +29,7 @@ header > nav {
     position: absolute;
     display: inline-block;
     right: 50px;
-    margin-top: 25px;
+    margin-top: 16px;
 }
 
 header > nav > ul {
@@ -69,32 +69,28 @@ main > :first-child {
 }
 
 .introduc {
-
-    left: 80px;
-    top: 270px;
-    position: relative;
-    bottom: 25px;
-
-    right: 0;
-    padding-bottom: 55px;
+    margin-left: 50px;
+    margin-top: 320px;
+    display: inline-block;
+    margin-bottom: 25px;
 }
 
-main > section:first-child>img:nth-child(3){
-    position: relative;
+main>:first-child>:nth-child(1){
+    position: absolute;
+    left: 70px;
+    top: 250px;
+}
+main>:first-child>:nth-child(2){
+    position: absolute;
+  right: 50px;
     top: 600px;
-    left: 300px;
 
 }
-main>section:first-child>img:first-child{
-position: relative;
-    top: 220px;
-    left: 80px;
-
-}
-main>section:first-child>img:nth-child(2){
-position: relative;
-    left: 1150px;
-    top: 600px;
+main>:first-child>:nth-child(3){
+    position: absolute;
+    right: 190px;
+    top: 100px;
+    height: 550px;
 }
 
 .introduc > h5 {
@@ -157,6 +153,7 @@ position: relative;
     margin-top: 5px;
     margin-bottom: 10px;
 }
+
 
 /*-----------------------------------------------------about me-----------------------------------------------------*/
 .secound-section {
@@ -295,7 +292,7 @@ position: relative;
 }
 .resume {
     display: inline-block;
-  position: relative;
+    position: relative;
     padding-left: 150px;
     padding-bottom: 68px;
     padding-top: 45px;
@@ -859,6 +856,106 @@ position: relative;
     font-weight: 600;
     line-height: 1.5;
 }
+.my-gallery{
+    background: #2E2F2E;
+}
+.my-gallery h1{
+    color: #FFB400;
+    font-family: "Merriweather", sans-serif;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: inline-block;
+    text-align: center;
+    margin-left: 18px;
+;
+
+}
+.my-gallery h2{
+    color: #FFFFFF;
+    font-family: "Merriweather", sans-serif;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    display: inline-block;
+
+}
+.gallery-title{
+    text-align: center;
+    word-spacing: 4px;
+}
+.gallery-raw1{
+
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+    padding-bottom: 25px;
+
+
+}
+.gallery-raw1 div{
+    width: 299px;
+    height: 205px;
+    background-color:#FFFFFF;
+  margin-right: 25px;
+}
+.gallery-raw2{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 95px;
+    padding-left: 140px;
+
+}
+.gallery-raw2 div{
+    width: 299px;
+    height: 205px;
+    background-color:#FFFFFF;
+    margin-left: 25px;
+}
+.gallery-raw1>div:nth-child(1){
+    background: url("/assest/img/WhatsApp Image 2023-09-20 at 11.45.51 PM (2).jpeg");
+    background-size: cover;
+    background-position: center;
+}
+.gallery-raw1>div:nth-child(2){
+    background: url("/assest/img/WhatsApp Image 2023-09-22 at 5.17.42 PM.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+.gallery-raw1>div:nth-child(3){
+    background: url("/assest/img/WhatsApp Image 2023-09-22 at 5.33.15 PM.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+.gallery-raw1>div:nth-child(4){
+    background: url("/assest/img/WhatsApp Image 2023-09-22 at 5.33.16 PM.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+.gallery-raw2>div:nth-child(1){
+    background: url("/assest/img/WhatsApp Image 2023-09-22 at 5.33.16 PM (1).jpeg");
+    background-size: cover;
+    background-position: center;
+}
+.gallery-raw2>div:nth-child(2){
+    background: url("/assest/img/WhatsApp Image 2023-09-22 at 5.33.17 PM.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+.gallery-raw2>div:nth-child(3){
+    background: url("/assest/img/WhatsApp Image 2023-09-22 at 5.33.17 PM (1).jpeg");
+    background-size: cover;
+    background-position: center;
+}
+.gallery-raw2>div:nth-child(4){
+    background: url("/assest/img/WhatsApp Image 2023-09-22 at 5.33.17 PM (2).jpeg");
+    background-size: cover;
+    background-position: center;
+}
 .services-section{
     padding-bottom: 60px;
     padding-top: 50px;
@@ -937,7 +1034,7 @@ position: relative;
     padding-left: 40px;
     padding-right: 40px;
     word-spacing: 3px;
-    line-height: 22px;
+    line-height: 20px;
 }
 .contact-title > h2 {
     color: #2E2F2E;
