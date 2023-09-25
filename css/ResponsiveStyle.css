@@ -644,10 +644,12 @@ main>:first-child>:nth-child(1) {
         display: inline-block;
     }
     .contact-details {
-        display: inline-block;
-        position: relative;
+        display: flex;
         top: 38px;
-        left: 12px;
+        left: 3px;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 200px;
     }
     .input-group > input {
         width: 247px;
@@ -669,8 +671,8 @@ main>:first-child>:nth-child(1) {
         left: 7px;
     }
     .input-group > textarea {
-        width: 290px;
-        height: 150px;
+        width: 265px;
+        height: 144px;
         flex-shrink: 0;
         background-color: #2E2F2E;
         border-radius: 32px;
@@ -693,7 +695,7 @@ main>:first-child>:nth-child(1) {
 
 }
 
-@media screen and (min-width: 321px) and (max-width: 425px) {
+@media screen and (min-width: 321px) and (max-width: 375px) {
 header > nav > ul > li {
     display: inline-block;
     margin-right: 6px;
@@ -704,4 +706,74 @@ header > nav > ul > li {
     font-weight: 500;
     line-height: normal;
 }
+
+    header > nav > ul {
+        display: flex;
+    }
+    header>nav{
+        position: absolute;
+        display: inline-block;
+        right: 13px;
+        margin-top: 18px;
+    }
+    main>:first-child>:nth-child(3) {
+        width: 290px;
+        position: absolute;
+        right: 48px;
+        height: 375px;
+        top: 17px;
+    }
+    header > h1 {
+        position: relative;
+        top: 8px;
+        left: 16px;
+        font-size: 27px;
+        font-style: normal;
+
+    }
+    header {
+        position: sticky;
+        height: 55px;
+    }
+    .introduc {
+        position: relative;
+        margin-left: 20px;
+        top: 420px;
+        display: inline-block;
+        margin-bottom: 25px;
+        margin-top: 0;
+    }
+    .introduc > h5 {
+        font-size: 30px;
+        font-style: normal;
+    }
+    header>nav>a{
+        display: none;
+    }
+    .introduc > h1 {
+        color: #FFB400;
+        font-family: 'Bree Serif', serif;
+        font-size: 49px;
+    }
+
+    .introduc > h4 {
+        font-size: 23px;
+        font-style: normal;
+        line-height: 20px;
+    }
+    .introduc > p {
+        font-size: 12px;
+        margin-top: 24px;
+    }
+    main>:first-child>:nth-child(1) {
+        position: absolute;
+        left: 254px;
+        top: 25px;
+    }
+
+    main>:first-child>:nth-child(2) {
+        position: absolute;
+        right: 23px;
+        top: 397px;
+    }
 }
