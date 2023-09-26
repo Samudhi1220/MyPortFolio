@@ -168,3 +168,121 @@ main > :first-child > :nth-child(2) {
     margin-bottom: 10px;
 }
 
+/*-----------------------------------------------------about me-----------------------------------------------------*/
+.about-me {
+    background: #222;
+    padding: 100px;
+    display: flex;
+}
+
+.about-me > :first-child {
+    border: 8px solid #FFB400;
+    width: 35%;
+    position: relative;
+}
+
+.about-me-text {
+    display: inline-block;
+    transform: rotate(-90deg);
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #FFB400;
+    font-family: "Merriweather", sans-serif;
+    font-size: 121px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+    position: relative;
+    left: 9%;
+}
+
+/*.img {*/
+/*    width: 100%;*/
+/*    position: relative;*/
+/*    top: 50px;*/
+/*    right: 50px;*/
+/*}*/
+
+.interesting-me {
+    width: 38%;
+    position: absolute;
+    right: 50px;
+}
+
+.interesting-me > :first-child > h2 {
+    color: #FFF;
+    font-family: "Inter", sans-serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0;
+    display: inline-block;
+}
+
+.interesting-me > :first-child > h1 {
+    color: #FFB400;
+    font-family: "Inter", sans-serif;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+    display: inline-block;
+    margin-left: 8px;
+}
+
+.interesting-me > :first-child > :last-child {
+    width: 150px;
+    height: 5px;
+    flex-shrink: 0;
+    stroke-width: 5px;
+    background: #FFB400;
+    margin-left: 5px;
+}
+
+.interesting-me > :nth-child(2) > p {
+    color: #8f8f8f;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+    margin-top: 50px;
+}
+
+.count {
+    display: flex;
+    gap: 65px;
+}
+
+.count > div > h1 {
+    color: #FFF;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 95px;
+    font-style: normal;
+    font-weight: 500;
+    display: inline-block;
+    margin-left: 70px;
+    margin-bottom: 0;
+    position: relative;
+    bottom: 40px;
+    right: 60px;
+}
+
+.count > div > h2 {
+    color: #FFB400;
+    font-family: "Inter", sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+    display: inline-block;
+    margin-left: 70px;
+    margin-top: 0;
+    position: relative;
+    bottom: 40px;
+    right: 60px;
+}
