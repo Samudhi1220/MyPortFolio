@@ -1,5 +1,138 @@
 @media screen and (max-width:320px ) {
+    header > nav > ul {
+        display: none;
+        margin: 0;
+    }
+    header > nav > a {
+        display: none;
+    }
+    header > h1 {
+        position: relative;
+        top: 10px;
+        left: 13px;
+        margin: 0;
+        font-size: 27px;
+    }
+    .me > img {
+        height: 326px;
+    }
+    header {
+        position: sticky;
+        height: 60px;
+    }
+    .me {
+        position: absolute;
+        right: 50px;
+    }
+    .introduc > h5 {
+        font-size: 30px;
+        margin: 0;
+        padding-top: 30px;
+    }
+    .introduc > h1 {
+        font-size: 39px;
+        margin: 0;
+        word-spacing: 4px;
+    }
+    .introduc > h4 {
+        font-size: 19px;
+        margin: 0;
+    }
+    .introduc > p {
+        font-size: 12px;
+        font-style: normal;
+        margin-top: 29px;
+    }
+    main > :first-child > :nth-child(2) {
+        position: absolute;
+        right: 13px;
+        top: 705px;
+    }
+    .introduc > div {
+        position: relative;
+        display: inline-block;
+        left: 65px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+    .link-img {
+        width: 30px;
+    }
+    .introduc > a {
+        position: relative;
+        padding: 5px;
+        border-radius: 22px;
 
+        top: 0;
+        bottom: 25px;
+    }
+    .introduc > div {
+        position: relative;
+        left: 34px;
+        margin-top: 4px;
+        margin-bottom: 10px;
+        top: 8px;
+
+    }
+    main > :first-child > :nth-child(2) {
+        position: absolute;
+        right: 13px;
+        top: 49px;
+    }
+    .super-section>div:nth-child(1)>img {
+        position: relative;
+        top: 193px;
+        right: 33px;
+
+    }
+    .introduc {
+        padding-top: 371px;
+    }
+    .super-section>div:nth-child(1)>img {
+        display: none;
+    }
+    .interesting-me > :first-child > h2 {
+        color: #FFF;
+        font-family: "Inter", sans-serif;
+        font-size: 27px;
+    }
+    .about-me > :first-child {
+        display: none;
+    }
+    .interesting-me {
+        width: 80%;
+        position: absolute;
+        right: 31px;
+    }
+    .about-me-text {
+        display: inline-block;
+        transform: none;
+        font-size: 48px;
+        margin: 0;
+        position: relative;
+        left: -34%;
+        bottom: 72px;
+    }
+    .interesting-me > :first-child > h1 {
+        color: #FFB400;
+        font-family: "Inter", sans-serif;
+        font-size: 39px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin: 0;
+        display: inline-block;
+        margin-left: 8px;
+    }
+    .interesting-me > :nth-child(2) > p {
+        color: #8f8f8f;
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 30px;
+        margin-top: 14px;
+    }
 /*header > h1 {*/
 
 /*    top: 16px;*/
