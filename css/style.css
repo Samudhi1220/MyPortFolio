@@ -65,3 +65,106 @@ header > nav > a {
     text-decoration: none;
     border-radius: 18px;
 }
+/*----------------------------------------Main-----------------------------------------------------*/
+
+.super-section {
+    padding: 40px;
+}
+
+.introduc {
+    padding-top: 320px;
+}
+
+main > :first-child > :nth-child(1) {
+    position: absolute;
+    left: 70px;
+    top: 250px;
+}
+
+main > :first-child > :nth-child(2) {
+    position: absolute;
+    right: 50px;
+    top: 600px;
+
+}
+
+/*main>:first-child>:nth-child(3){*/
+/*    position: absolute;*/
+/*    right: 190px;*/
+/*    top: 100px;*/
+/*    height: 550px;*/
+/*}*/
+
+.me {
+    display: flex;
+    justify-content: right;
+    width: 50%;
+    position: absolute;
+    right: 250px;
+}
+
+.me > img {
+    height: 500px;
+}
+
+.introduc > h5 {
+    color: #000;
+    font-family: 'Bree Serif', serif;
+    font-size: 53px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    margin: 0;
+}
+
+.introduc > h1 {
+    color: #FFB400;
+    font-family: 'Bree Serif', serif;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+}
+
+.introduc > h4 {
+    color: #000;
+    font-family: 'Bree Serif', serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 0.1;
+    margin: 0;
+}
+
+.introduc > p {
+    color: #727374;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 200;
+    margin-top: 45px;
+}
+
+.introduc > a {
+    position: relative;
+    padding: 8px;
+    background-color: #ffb400;
+    border: 2px solid #ffb400;
+    transition: all 0.5s;
+    border-radius: 36px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    bottom: 25px;
+}
+
+.introduc > div {
+    position: relative;
+    display: inline-block;
+    left: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
