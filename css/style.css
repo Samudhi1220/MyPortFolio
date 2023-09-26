@@ -852,3 +852,169 @@ main > :first-child > :nth-child(2) {
     height: 100%;
 
 }
+/*------------------------------------------------------------certificate------------------------------------------------*/
+.my-certificate {
+    background-color: #2E2F2E;
+    position: relative;
+}
+
+.my-certificate .main-title {
+    padding-bottom: 40px;
+}
+
+.img {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 80px;
+    margin-bottom: 80px;
+}
+
+.img img {
+    width: 586px;
+    height: 429px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    /*margin-left: 80px;*/
+}
+
+.yellow-line {
+    width: 2px;
+    height: 445px;
+    background: #FFB400;
+    display: inline-block;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.paragraph {
+    color: #FFF;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.5;
+    width: 40%;
+}
+
+.paragraph > p {
+    margin: 0;
+}
+
+/*-----------------------------------------------------------my gallery-----------------------------------------------*/
+
+.my-gallery {
+    background: #2E2F2E;
+}
+
+.my-gallery h1 {
+    color: #FFB400;
+    font-family: "Merriweather", sans-serif;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: inline-block;
+    text-align: center;
+    margin-left: 18px;;
+
+}
+
+.my-gallery h2 {
+    color: #FFFFFF;
+    font-family: "Merriweather", sans-serif;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    display: inline-block;
+
+}
+
+.gallery-title {
+    text-align: center;
+    word-spacing: 4px;
+}
+
+.gallery-raw1 {
+
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+    padding-bottom: 25px;
+
+
+}
+
+.gallery-raw1 div {
+    width: 299px;
+    height: 205px;
+    background-color: #FFFFFF;
+    margin-right: 25px;
+}
+
+.gallery-raw2 {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 95px;
+    padding-left: 140px;
+
+}
+
+.gallery-raw2 div {
+    width: 299px;
+    height: 205px;
+    background-color: #FFFFFF;
+    margin-left: 25px;
+}
+
+.gallery-raw1 > div:nth-child(1) {
+    background: url("/assest/img/WhatsApp Image 2023-09-20 at 11.45.51 PM (2).jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+.gallery-raw1 > div:nth-child(2) {
+    background: url("/assest/img/WhatsApp Image 2023-09-22 at 5.17.42 PM.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+.gallery-raw1 > div:nth-child(3) {
+    background: url("/assest/img/WhatsApp Image 2023-09-22 at 5.33.15 PM.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+.gallery-raw1 > div:nth-child(4) {
+    background: url("/assest/img/WhatsApp Image 2023-09-22 at 5.33.16 PM.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+.gallery-raw2 > div:nth-child(1) {
+    background: url("/assest/img/WhatsApp Image 2023-09-22 at 5.33.16 PM (1).jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+.gallery-raw2 > div:nth-child(2) {
+    background: url("/assest/img/WhatsApp Image 2023-09-22 at 5.33.17 PM.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+.gallery-raw2 > div:nth-child(3) {
+    background: url("/assest/img/WhatsApp Image 2023-09-22 at 5.33.17 PM (1).jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+.gallery-raw2 > div:nth-child(4) {
+    background: url("/assest/img/WhatsApp Image 2023-09-22 at 5.33.17 PM (2).jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
