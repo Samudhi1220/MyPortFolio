@@ -183,6 +183,7 @@ main > :first-child > :nth-child(2) {
     position: relative;
 }
 
+
 .about-me-text {
     display: inline-block;
     transform: rotate(-90deg);
