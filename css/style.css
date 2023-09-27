@@ -494,13 +494,15 @@ main > :first-child > :nth-child(2) {
 }
 
 .line {
-    margin: 0;
-    width: 166.150px;
+    position: relative;
+    width: 166.15px;
     height: 5px;
     stroke-width: 4px;
     background: #FFB400;
     margin-bottom: 60px;
     margin-top: 5%;
+    /* position: absolute; */
+
 }
 
 
@@ -639,7 +641,7 @@ main > :first-child > :nth-child(2) {
 }
 
 .work:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 .work img {
