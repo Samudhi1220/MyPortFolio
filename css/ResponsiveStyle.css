@@ -1667,7 +1667,7 @@
     }
 
     .title h1 {
-        font-size: 42px;
+        font-size: 60px;
     }
 
     .skill-list {
@@ -1714,18 +1714,18 @@
     }
 
     .advantages > h1 {
-        font-size: 40px;
+        font-size: 60px;
         padding: 0;
     }
 
     .tools-list > div {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(4, 1fr);
-        gap: 32px;
+        gap: 45px;
     }
 
     .tools {
-        padding: 15px;
+        padding: 40px;
     }
 
     .tools > h4 {
@@ -1753,7 +1753,7 @@
 
     .work {
         width: 80%;
-        display: flex;
+
         height: unset;
         margin: 0;
     }
@@ -1775,19 +1775,20 @@
     }
 
     .my-assignment > h1 {
-        font-size: 40px;
+        font-size: 60px;
         padding-top: 0;
     }
 
     .assignment-list > div {
         grid-template-rows: repeat(5, 1fr);
         grid-template-columns: repeat(2, 1fr);
-        gap: 30px;
+        gap: 20px;
         padding-top: 40px;
+        padding-left: 40px;
     }
 
     .assignment {
-        width: 100%;
+        width:75%;
         height: unset;
         border-radius: 20px;
     }
@@ -1812,19 +1813,25 @@
 
     .my-certificate .main-title {
         padding-bottom: 0;
+
     }
 
     .main-title {
         padding: 0;
     }
+    .main-title h1 {
+        font-size: 60px;
+    }
+
 
     .img {
         display: block;
         padding-top: 40px;
+        padding-left: 60px;
     }
 
     .img img {
-        width: 100%;
+        width: 90%;
         height: unset;
         margin: 0;
     }
@@ -1834,29 +1841,35 @@
     }
 
     .paragraph {
-        font-size: 20px;
-        line-height: 1.4;
+        font-size: 22px;
+        line-height: 1.5;
         width: 100%;
-        padding-top: 28px;
+        padding-top: 38px;
+        text-align: center;
+
     }
 
     .services-section h1 {
-        font-size: 40px;
+        font-size: 60px;
         margin: 0;
     }
 
     .services-section h2 {
-        font-size: 26px;
+        font-size: 35px;
+        padding-bottom: 10px;
+        padding-top: 10px;
         margin: 0;
     }
 
     .service-list {
+        width: 85%;
         flex-direction: column;
         padding-top: 40px;
+        padding-left: 50px;
     }
 
     .services {
-        padding: 25px;
+        padding: 45px;
     }
 
     .services-section > :first-child {
@@ -1905,11 +1918,11 @@
     }
 
     .contact-title > h2 {
-        font-size: 30px;
+        font-size: 50px;
     }
 
     .contact-title > h1 {
-        font-size: 40px;
+        font-size: 50px;
     }
 
     .contact-title {
@@ -1919,7 +1932,7 @@
     }
 
     .my-contact>:nth-child(2) > p {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .full-details {
@@ -1933,7 +1946,7 @@
     }
 
     .input-group > input {
-        width: 80%;
+        width: 70%;
         height: 42px;
     }
 
@@ -1949,7 +1962,7 @@
     }
 
     .input-group > textarea {
-        width: 100%;
+        width: 90%;
         height: 165px;
         margin-top: 25px;
     }
