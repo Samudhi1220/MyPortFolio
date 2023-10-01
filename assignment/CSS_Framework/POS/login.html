@@ -13,11 +13,11 @@
     <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
         <div class="container-fluid ">
 
-            <a class="navbar-brand d-none d-sm-block" href="#" >
+            <a class="navbar-brand d-none d-md-block" href="#" >
                 <img src="assest/img/3d-deal-hand-shake-design-element.jpg" alt="Logo" width="40" height="35" class="d-inline-block align-text-top">
 
                 POS System
-            </a><ul class="nav justify-content-end d-none d-md-flex">
+            </a><ul class="nav justify-content-end   d-md-flex">
             <li class="nav-customer">
                 <a class="nav-link active" aria-current="page" href="#">Customer</a>
             </li>
@@ -29,13 +29,137 @@
             </li>
 
         </ul>
-            <form class="d-flex" role="search">
+            <form class="d-flex d-md-flex" role="search">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success" type="submit">Search</button>
             </form>
         </div>
     </nav>
 </header>
+<div class="card text-bg-light m-5" style="max-width: 90rem; ">
+    <div class="card-header"> <a class="navbar-brand" href="#">
+        <img src="assest/img/icons8-staff-48.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+    </a>Customer
+    </div>
+    <div class="card-body">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-sm-8">
+                    <form class="row g-3 needs-validation bg-inf" novalidate style="max-width: 50rem;">
+                    <span class="border border-start-0"></span>
+                    <div class="col-md-4">
+                        <label for="validationCustom01" class="form-label">First name</label>
+                        <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="validationCustom02" class="form-label">Last name</label>
+                        <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="validationCustomUsername" class="form-label">Customer Id</label>
+                        <div class="input-group has-validation">
+                            <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                            <div class="invalid-feedback">
+                                Please choose a Id.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="validationCustom03" class="form-label">Address</label>
+                        <input type="text" class="form-control" id="validationCustom03" required>
+                        <div class="invalid-feedback">
+                            Please provide a valid Address.
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="validationCustom04" class="form-label">Email</label>
+                        <input type="text" class="form-control" id="validationCustom04" required>
+                        <div class="invalid-feedback">
+                            Please select a valid state.
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="validationCustom05" class="form-label">Phone</label>
+                        <input type="text" class="form-control" id="validationCustom05" required>
+                        <div class="invalid-feedback">
+                            Please provide a valid number.
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                            <label class="form-check-label" for="invalidCheck">
+                                Agree to terms and conditions
+                            </label>
+                            <div class="invalid-feedback">
+                                You must agree before submitting.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <button class="btn btn-primary" type="submit">Submit form</button>
+                    </div>
+                </form>
+                </div>
+                <div class="col-sm-4">
 
+                    <form class="d-flex" style="max-width: 30rem;" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                    <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                        <button type="button" class="btn btn-danger">Delete</button>
+                        <button type="button" class="btn btn-warning">Update</button>
+
+                    </div>
+                </div>
+            </div>
+
+        <table class="table bg-gradient">
+            <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th>
+                <th scope="col">Address</th>
+                <th scope="col">Phone</th>
+            </tr>
+            </thead>
+            <tbody class="table-group-divider">
+            <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+                <td>@mdo</td>
+                <td>@mdo</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+                <td>@fat</td>
+                <td>@fat</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td colspan="2">Larry the Bird</td>
+                <td>@twitter</td>
+                <td>@twitter</td>
+                <td>@twitter</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    </div>
+    </div>
 </body>
 </html>
