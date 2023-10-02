@@ -44,25 +44,25 @@
   <div class="card-body">
     <div class="container text-center">
       <div class="row">
-        <div class="col-sm-8">
+        <div class="col-sm-6">
           <form class="row g-3 needs-validation bg-inf" novalidate style="max-width: 50rem;">
             <span class="border border-start-0"></span>
-            <div class="col-md-4">
-              <label for="validationCustom01" class="form-label">First name</label>
+            <div class="col-sm-6">
+              <label for="validationCustom01" class="form-label">Item Code</label>
               <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
               <div class="valid-feedback">
                 Looks good!
               </div>
             </div>
-            <div class="col-md-4">
-              <label for="validationCustom02" class="form-label">Last name</label>
+            <div class="col-sm-6">
+              <label for="validationCustom02" class="form-label">Item Name</label>
               <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
               <div class="valid-feedback">
                 Looks good!
               </div>
             </div>
-            <div class="col-md-4">
-              <label for="validationCustomUsername" class="form-label">Customer Id</label>
+            <div class="col-sm-6">
+              <label for="validationCustomUsername" class="form-label">Item Price</label>
               <div class="input-group has-validation">
                 <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
                 <div class="invalid-feedback">
@@ -70,40 +70,16 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-6">
-              <label for="validationCustom03" class="form-label">Address</label>
+            <div class="col-md-6 ">
+              <label for="validationCustom03" class="form-label">Item Quantity</label>
               <input type="text" class="form-control" id="validationCustom03" required>
               <div class="invalid-feedback">
                 Please provide a valid Address.
               </div>
             </div>
-            <div class="col-md-3">
-              <label for="validationCustom04" class="form-label">Email</label>
-              <input type="text" class="form-control" id="validationCustom04" required>
-              <div class="invalid-feedback">
-                Please select a valid state.
-              </div>
-            </div>
-            <div class="col-md-3">
-              <label for="validationCustom05" class="form-label">Phone</label>
-              <input type="text" class="form-control" id="validationCustom05" required>
-              <div class="invalid-feedback">
-                Please provide a valid number.
-              </div>
-            </div>
+
             <div class="col-12">
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                <label class="form-check-label" for="invalidCheck">
-                  Agree to terms and conditions
-                </label>
-                <div class="invalid-feedback">
-                  You must agree before submitting.
-                </div>
-              </div>
-            </div>
-            <div class="col-12">
-              <button class="btn btn-primary" type="submit">Submit form</button>
+              <button class="btn btn-primary" type="submit">Save</button>
             </div>
           </form>
         </div>
@@ -112,12 +88,13 @@
           <form class="d-flex" style="max-width: 30rem;" role="search">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
-          <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-            <button type="button" class="btn btn-danger">Delete</button>
-            <button type="button" class="btn btn-warning">Update</button>
-
+          </form><div class="d-flex justify-content-end">
+          <div class="pt-1">
+            <button type="button" class="btn btn-warning mt-3">Update</button>
+            <button type="button" class="btn btn-danger mt-3">Delete</button>
+            <button type="button" class="btn btn-secondary mt-3">Details</button>
           </div>
+        </div>
         </div>
       </div>
 
@@ -125,11 +102,11 @@
         <thead>
         <tr>
           <th scope="col">#</th>
-          <th scope="col">First</th>
-          <th scope="col">Last</th>
-          <th scope="col">Handle</th>
-          <th scope="col">Address</th>
-          <th scope="col">Phone</th>
+          <th scope="col">ItemCode</th>
+          <th scope="col">ItemName</th>
+          <th scope="col">ItemPrice</th>
+          <th scope="col">ItemQuantity</th>
+
         </tr>
         </thead>
         <tbody class="table-group-divider">
@@ -139,13 +116,12 @@
           <td>Otto</td>
           <td>@mdo</td>
           <td>@mdo</td>
-          <td>@mdo</td>
+
         </tr>
         <tr>
           <th scope="row">2</th>
           <td>Jacob</td>
           <td>Thornton</td>
-          <td>@fat</td>
           <td>@fat</td>
           <td>@fat</td>
         </tr>
@@ -154,7 +130,7 @@
           <td colspan="2">Larry the Bird</td>
           <td>@twitter</td>
           <td>@twitter</td>
-          <td>@twitter</td>
+
         </tr>
         </tbody>
       </table>
