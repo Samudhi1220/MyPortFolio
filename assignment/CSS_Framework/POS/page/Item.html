@@ -19,14 +19,17 @@
 
         POS System
       </a><ul class="nav justify-content-end   d-md-flex">
+      <li class="nav-home">
+        <a class="nav-link" href="../index.html">Home</a>
+      </li>
       <li class="nav-customer">
-        <a class="nav-link active" aria-current="page" href="#">Customer</a>
+        <a class="nav-link active" aria-current="page" href="../page/Customer.html">Customer</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Items</a>
+        <a class="nav-link" href="../page/Item.html">Items</a>
       </li>
       <li class="nav-order">
-        <a class="nav-link" href="#">Orders</a>
+        <a class="nav-link" href="../page/OrderDetails.html">Orders</a>
       </li>
 
     </ul>
@@ -51,7 +54,7 @@
             <span class="border border-start-0"></span>
             <div class="col-sm-6">
               <label for="validationCustom01" class="form-label">Item Code</label>
-              <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+              <input type="text" class="form-control" id="validationCustom01" value="I000" required>
               <div class="valid-feedback">
                 Looks good!
               </div>
@@ -95,6 +98,7 @@
             <button type="button" class="btn btn-warning mt-3">Update</button>
             <button type="button" class="btn btn-danger mt-3">Delete</button>
             <button type="button" class="btn btn-secondary mt-3">Details</button>
+            <button type="button" class="btn btn-success mt-3">Get All</button>
           </div>
         </div>
         </div>
@@ -104,6 +108,7 @@
         <thead>
         <tr>
 
+          <th scope="col"></th>
           <th scope="col">ItemCode</th>
           <th scope="col">ItemName</th>
           <th scope="col">ItemPrice</th>
@@ -115,6 +120,7 @@
         <tr>
           <th scope="row">1</th>
 
+          <td>001</td>
           <td>Otto</td>
           <td>200</td>
           <td>10</td>
@@ -122,15 +128,15 @@
         </tr>
         <tr>
           <th scope="row">2</th>
-
-          <td>Thornton</td>
+          <td>002</td>
+          <td>Otto</td>
           <td>100</td>
           <td>20</td>
         </tr>
         <tr>
           <th scope="row">3</th>
-
-            <td>Bird</td>
+          <td>003</td>
+          <td>Otto</td>
           <td>140</td>
           <td>30</td>
 
