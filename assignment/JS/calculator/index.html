@@ -7,8 +7,47 @@
   <meta name="viewport" content="width=device-width initial-scale=1.0 user-scalable=no">
 
   <link rel="stylesheet" href="assest/css/8.0.1_normalize.css">
-  <link rel="stylesheet" href="assest/css/style.css">
   <link rel="stylesheet" href="assest/bootstrap/css/bootstrap.css">
+
+  <style>
+    main {
+      width: 100%;
+      height: 100vh;
+      background-color: #edf2f4;
+    }
+
+    #cal {
+      height: 80%;
+      width: 25%;
+      background-color: #a4a4a6;
+      z-index: 100;
+    }
+
+    #cal > div:first-child {
+      height: 20%;
+
+    }
+
+    #cal > div:nth-child(2) {
+      height: 70%;
+      z-index: 100;
+
+    }
+
+
+    #cal > div:nth-child(2) > div {
+      margin: 2.5%;
+      height: 95%;
+      width: 95%;
+    }
+
+    .row {
+      height: calc(80% / 5);
+    }
+    .container button{
+      font-size: 2em;
+    }
+  </style>
 
 
 </head>
@@ -44,13 +83,13 @@
                 <button type="button" class="btn btn-secondary col rounded-5 d-flex justify-content-center align-items-center ">-</button>
               </div>
               <div class="row column-gap-3 mt-3">
-                <button type="button" class="btn btn-dark col rounded-5 d-flex justify-content-center align-items-center ">1</button>
-                <button type="button" class="btn btn-dark col rounded-5 d-flex justify-content-center align-items-center ">2</button>
+                <button type="button" class="btn btn-dark col rounded-5 d-flex justify-content-center align-items-center number">1</button>
+                <button type="button" class="btn btn-dark col rounded-5 d-flex justify-content-center align-items-center number">2</button>
                 <button type="button" class="btn btn-dark col rounded-5 d-flex justify-content-center align-items-center ">3</button>
                 <button type="button" class="btn btn-secondary col rounded-5 d-flex justify-content-center align-items-center ">+</button>
               </div>
               <div class="row column-gap-3 d-flex justify-content-center mt-3">
-                <button type="button" class="btn btn-dark col-6 rounded-5 d-flex justify-content-center align-items-center ">0</button>
+                <button type="button" class="btn btn-dark col-6 rounded-5 d-flex justify-content-center align-items-center number">0</button>
                 <button type="button" class="btn btn-dark col rounded-5 d-flex justify-content-center align-items-center ">.</button>
                 <button type="button" class="btn btn-dark col rounded-5 d-flex justify-content-center align-items-center ">=</button>
               </div>
@@ -61,9 +100,22 @@
 
   </section>
 </main>
-<script src="assest/js/app.js"></script>
-<script src="assest/js/cal_script.js"></script>
-<script src="assest/js/particles.js"></script>
+<script src="assest/js/code.jquery.com_jquery-3.7.1.min.js"></script>
+<script src="../../../assest/boostrap/js/bootstrap.js"></script>
+<script>
+  $(document).ready(function(){
+    $(".clc").click(function(){
+      $("#display").val($("#display").val() +$(this).val());
+    });
+    $(".clear").click(function(){
+      $("#display").val('');
+    });
+    $(".result").click(function(){
+      $("#display").val(eval($("#display").val()));
+    });
+  });
 
+
+</script>
 </body>
 </html>
