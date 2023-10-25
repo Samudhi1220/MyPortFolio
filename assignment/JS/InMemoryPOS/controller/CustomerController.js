@@ -1,12 +1,16 @@
 
-saveCustomer();
+
 
 let customerId;
 let customerFName;
 let customerLName;
 let customerAddress;
 let customerSalary;
+let selectedId;
 
+$(window).on('load',function () {
+    $('#btnCusSave').prop('disabled',true);
+});
 
 function getAllCustomerForTextField() {
      customerId = $('#customerId').val();
@@ -15,21 +19,32 @@ function getAllCustomerForTextField() {
     customerAddress = $('#cusAddress').val();
      customerSalary = $('#cusSalary').val();
 }
+$('#btnCusSave').click(function () {
+    if (checkAll()){
+        saveCustomer();
+    }else {
+        alert('error');
+    }
+});
+
+$("#btnCusGetAll").click(function () {
+    getAllCustomers();
+});
+
 
 function saveCustomer() {
-    $('#btnCusSave').click(function () {
 
-        alert('moda samudhi');
+
         let customerIds = $('#customerId').val();
 
+        if (searchExistCustomer(customerIds.trim())) {
+            // Swal.fire({
+            //     icon: 'error',
+            //     title: 'Oops...',
+            //     text: 'This Customer Already Exist.'
+            // });
 
-        if (searchExistCustomer(customerIds)){
-            Swal.fire({
-                icon: 'error',
-                title: 'Oops...',
-                text: 'Something went wrong!',
-                footer: '<a href="">Why do I have this issue?</a>'
-            })
+            alert('already exist')
         }else {
             getAllCustomerForTextField();
             let newCustomer = Object.assign({},customer);
@@ -43,14 +58,61 @@ function saveCustomer() {
             customerDB.push(newCustomer);
 
             Swal.fire({
-                icon:  'success',
-                title: 'Saved',
+                position: 'top-end',
+                icon: 'success',
+                title: 'Customer has been saved',
+                showConfirmButton: false,
+                timer: 1500
+
             })
 
             loadAllData();
-            setDataTextField("","","","","")
+            clearTextField();
+            bindEvents()
 
         }
+
+}
+
+function updateCustomer() {
+    getAllCustomerForTextField();
+
+    Swal.fire({
+        title: 'Do you want to save the changes?',
+        showDenyButton: true,
+        showCancelButton: true,
+        confirmButtonText: 'Save',
+        denyButtonText: `Don't save`,
+    }).then((result) => {
+        /* Read more about isConfirmed, isDenied below */
+        if (result.isConfirmed) {
+            Swal.fire('Saved!', '', 'success');
+
+
+            let index = -1;
+
+            for (let customerObj of customerDB) {
+                if (customerObj.id == selectedId) {
+                    index = customerDB.indexOf(customerObj);
+                }
+            }
+
+            customerDB[index].id = customerId;
+            customerDB[index].firstName = customerFName;
+            customerDB[index].lastName = customerLName;
+            customerDB[index].address = customerAddress;
+            customerDB[index].salary = customerSalary;
+
+            loadAllData();
+            clearTextField();
+            $('#customerId').prop('disabled', false);
+            bindEvents();
+
+        } else if (result.isDenied) {
+            Swal.fire('Changes are not saved', '', 'info')
+        }
+
+
     });
 }
 
@@ -61,6 +123,7 @@ function searchExistCustomer(id) {
 }
 
 function loadAllData() {
+    $('#tblCustomer').empty();
     for (var customer of customerDB){
         var row = `<tr><td>${customer.id}</td><td>${customer.firstName}</td><td>${customer.lastName}</td><td>${customer.address}</td><td>${customer.salary}</td></tr>`;
         $('#tblCustomer').append(row)
@@ -74,3 +137,41 @@ function setDataTextField(id,firstName,lastName,address,salary) {
     $('#cusAddress').val(address);
     $('#cusSalary').val(salary);
 }
+function getAllCustomers() {
+
+    $("#tblCustomer").empty();
+
+    for (let i = 0; i < customerDB.length; i++) {
+        let id = customerDB[i].id;
+        let firstName = customerDB[i].firstName;
+        let lastName = customerDB[i].lastName;
+        let address = customerDB[i].address;
+        let salary = customerDB[i].salary;
+
+        let row = `<tr>
+                     <td>${id}</td>
+                     <td>${firstName}</td>
+                     <td>${lastName}</td>
+                     <td>${address}</td>
+                     <td>${salary}</td>
+                    </tr>`;
+
+        $("#tblCustomer").append(row);
+
+        bindEvents();
+    }
+}
+function bindEvents() {
+    $('#tblCustomer>tr').click(function () {
+
+        let id = $(this).children().eq(0).text();
+        let firstName = $(this).children().eq(1).text();
+        let lastName = $(this).children().eq(1).text();
+        let address = $(this).children().eq(2).text();
+        let salary = $(this).children().eq(3).text();
+
+        setDataTextField(id, firstName, lastName, address, salary);
+
+    })
+}
+
