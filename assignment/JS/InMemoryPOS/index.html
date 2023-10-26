@@ -159,10 +159,7 @@
                         </div>
                         <div class="col-sm-4">
 
-                            <form class="d-flex" style="max-width: 30rem;" role="search">
-                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                                <button class="btn btn-outline-success" type="submit">Search</button>
-                            </form>
+                          
                             <div class="d-flex justify-content-end">
                                 <div class="pt-1">
                                     <button type="button" class="btn btn-primary mt-3" id="btnCusSave">Save</button>
@@ -209,14 +206,14 @@
                                 <span class="border border-start-0"></span>
                                 <div class="col-sm-6">
                                     <label for="itemCode" class="form-label">Item Code</label>
-                                    <input type="text" class="form-control" value="Mark" required id="itemCode">
+                                    <input type="text" class="form-control"  required id="itemCode">
                                     <div class="valid-feedback">
                                         Looks good!
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <label for="item" class="form-label">Item Name</label>
-                                    <input type="text" class="form-control" value="Otto" id="item" required>
+                                    <input type="text" class="form-control"  id="item" required>
                                     <div class="valid-feedback">
                                         Looks good!
                                     </div>
@@ -245,17 +242,14 @@
                         </div>
                         <div class="col-sm-4">
 
-                            <form class="d-flex" style="max-width: 30rem;" role="search">
-                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                                <button class="btn btn-outline-success" type="submit">Search</button>
-                            </form>
+
                             <div class="d-flex justify-content-end">
                                 <div class="pt-1">
-                                    <button type="button" class="btn btn-primary mt-3">Save</button>
-                                    <button type="button" class="btn btn-warning mt-3">Update</button>
-                                    <button type="button" class="btn btn-danger mt-3">Delete</button>
-                                    <button type="button" class="btn btn-success mt-3">Get All</button>
-                                    <button type="button" class="btn btn-secondary mt-3">Clear Table</button>
+                                    <button type="button" class="btn btn-primary mt-3" id="btnItemSave">Save</button>
+                                    <button type="button" class="btn btn-warning mt-3" id="btnItemUpdate">Update</button>
+                                    <button type="button" class="btn btn-danger mt-3" id="btnItemDelete">Delete</button>
+                                    <button type="button" class="btn btn-success mt-3" id="btnGetAllItem">Get All</button>
+                                    <button type="button" class="btn btn-secondary mt-3" id="btnClearItemTable">Clear Table</button>
                                 </div>
                             </div>
                         </div>
@@ -272,30 +266,8 @@
 
                         </tr>
                         </thead>
-                        <tbody class="table-group-divider">
-                        <tr>
-                            <th scope="row">1</th>
+                        <tbody class="table-group-divider" id="tblItem">
 
-                            <td>Otto</td>
-                            <td>200</td>
-                            <td>10</td>
-
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-
-                            <td>Thornton</td>
-                            <td>100</td>
-                            <td>20</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-
-                            <td>Bird</td>
-                            <td>140</td>
-                            <td>30</td>
-
-                        </tr>
                         </tbody>
                     </table>
                 </div>

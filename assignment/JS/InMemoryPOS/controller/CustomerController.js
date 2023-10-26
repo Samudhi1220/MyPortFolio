@@ -31,6 +31,14 @@ $("#btnCusGetAll").click(function () {
     getAllCustomers();
 });
 
+$('#btnCusUpdate').click(function () {
+
+    if (checkAll()){
+        updateCustomer();
+    } else {
+        alert('error');
+    }
+});
 
 function saveCustomer() {
 
@@ -86,7 +94,7 @@ function updateCustomer() {
     }).then((result) => {
         /* Read more about isConfirmed, isDenied below */
         if (result.isConfirmed) {
-            Swal.fire('Saved!', '', 'success');
+
 
 
             let index = -1;
@@ -105,8 +113,10 @@ function updateCustomer() {
 
             loadAllData();
             clearTextField();
-            $('#customerId').prop('disabled', false);
-            bindEvents();
+            $('#customerId').prop('disabled', true);
+            setDataTextField();
+            Swal.fire('Saved!', '', 'success');
+
 
         } else if (result.isDenied) {
             Swal.fire('Changes are not saved', '', 'info')
@@ -166,12 +176,13 @@ function bindEvents() {
 
         let id = $(this).children().eq(0).text();
         let firstName = $(this).children().eq(1).text();
-        let lastName = $(this).children().eq(1).text();
-        let address = $(this).children().eq(2).text();
-        let salary = $(this).children().eq(3).text();
+        let lastName = $(this).children().eq(2).text();
+        let address = $(this).children().eq(3).text();
+        let salary = $(this).children().eq(4).text();
 
         setDataTextField(id, firstName, lastName, address, salary);
-
+        $('#customerId').prop('disabled', true);
+        selectedId = $('#customerId').val();
     })
 }
 
