@@ -53,6 +53,7 @@ $('#btnCusGetAll').click(function () {
     getAllCustomers();
     setDataTextField();
     focusClick();
+    $('#search').val("");
 
 });
 
@@ -60,6 +61,7 @@ $('#btnClearCusTable').click(function () {
     $('#tblCustomer').empty();
     clearTextField();
     disableTextField(false);
+    $('#search').val("");
 
 });
 
@@ -101,6 +103,7 @@ function saveCustomer() {
             clearTextField();
         bindEvents();
             focusClick();
+            $('#search').val("");
 
         }
 
@@ -140,7 +143,9 @@ function updateCustomer() {
             clearTextField();
           bindEvents();
             focusClick();
+            $('#search').val("");
             Swal.fire('Saved!', '', 'success');
+
 
 
         } else if (result.isDenied) {
@@ -176,7 +181,7 @@ function deleteCustomer() {
             clearTextField();
             bindEvents()
             focusClick();
-
+            $('#search').val("");
 
 
             Swal.fire('Deleted!', '', 'success');
@@ -265,4 +270,21 @@ function focusClick() {
         $("#btnCusSave").prop("disabled", true);
 
     });
+}
+function searchCustomer() {
+    $('#search').on('keyup', function () {
+        $('#tblCustomer').empty();
+        let index = -1;
+
+        for (let customerObj of customerDB) {
+            if (customerObj.id == $('#search').val()) {
+                index = customerDB.indexOf(customerObj);
+            }
+        }
+        var row = `<tr><td>${customerDB[index].id}</td><td>${customerDB[index].firstName}</td><td>${customerDB[index].lastName}</td><td>${customerDB[index].address}</td><td>${customerDB[index].salary}</td></tr>`;
+        $('#tblCustomer').append(row)
+        setDataTextField();
+        focusClick();
+    });
+
 }

@@ -13,12 +13,16 @@ $('#nav-link2').click(function () {
     $('.Dashboard').css('display','none');
     $('.Item').css('display','none');
     $('.OrderDetails').css('display','none');
+    $('#search').off('keyup');
+    searchCustomer();
 })
 $('#nav-link3').click(function () {
     $('.Customer').css('display','none');
     $('.Dashboard').css('display','none');
     $('.Item').css('display','block');
     $('.OrderDetails').css('display','none');
+    $('#search').off('keyup');
+    searchItem();
 })
 $('#nav-link4').click(function () {
     $('.Customer').css('display','none');
@@ -27,6 +31,8 @@ $('#nav-link4').click(function () {
     $('.OrderDetails').css('display','block');
     setCustomerId();
     setItemId();
+    $('#search').off('keyup');
+    searchOrders();
 
 
 })

@@ -287,7 +287,7 @@ function placeOrder() {
             let itemCode = orderDB[index].orderDetails[i].code;
 
             for (let itemDBElement of itemDB) {
-                if (itemDBElement.id == itemCode) {
+                if (itemDBElement.code == itemCode) {
                     itemDBElement.qty = itemDBElement.qty - orderDB[index].orderDetails[i].qty;
                 }
             }
@@ -315,7 +315,7 @@ function placeOrder() {
         Swal.fire({
             position: 'top-end',
             icon: 'success',
-            title: 'Customer has been saved',
+            title: 'Order has been saved',
             showConfirmButton: false,
             timer: 1500
         })

@@ -48,6 +48,7 @@ $('#btnGetAllItem').click(function () {
     getAllItem();
     setItemDataTextField();
     focusItemClick();
+    $('#search').val("");
 
 });
 
@@ -55,7 +56,7 @@ $('#btnClearItemTable').click(function () {
     $('#tblItem').empty();
     clearItemTextField();
     disableItemTextField(false);
-
+    $('#search').val("");
 });
 
 function saveItem() {
@@ -97,6 +98,8 @@ function saveItem() {
         bindEvent();
         focusItemClick();
 
+        $('#search').val("");
+
     }
 
 }
@@ -136,6 +139,8 @@ function updateItem() {
             focusItemClick();
             Swal.fire('Saved!', '', 'success');
 
+            $('#search').val("");
+
 
         } else if (result.isDenied) {
             Swal.fire('Changes are not saved', '', 'info')
@@ -170,6 +175,8 @@ function deleteItem() {
             clearItemTextField();
             bindEvent()
             focusItemClick();
+
+            $('#search').val("");
 
 
 
@@ -258,5 +265,22 @@ function focusItemClick() {
         $("#btnItemDelete").prop("disabled", false);
         $("#btnItemSave").prop("disabled", true);
 
+    });
+}
+
+function searchItem() {
+    $('#search').on('keyup', function () {
+        $('#tblItem').empty();
+        let index = -1;
+
+        for (let itemObj of itemDB) {
+            if (itemObj.code == $('#search').val()) {
+                index = itemDB.indexOf(itemObj);
+            }
+        }
+        var row = `<tr><td>${itemDB[index].code}</td><td>${itemDB[index].name}</td><td>${itemDB[index].price}</td><td>${itemDB[index].qty}</td></tr>`;
+        $('#tblItem').append(row)
+        setItemDataTextField();
+        focusItemClick();
     });
 }
