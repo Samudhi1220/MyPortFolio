@@ -25,4 +25,8 @@ $('#nav-link4').click(function () {
     $('.Dashboard').css('display','none');
     $('.Item').css('display','none');
     $('.OrderDetails').css('display','block');
+    setCustomerId();
+    setItemId();
+
+
 })
