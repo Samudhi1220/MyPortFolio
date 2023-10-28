@@ -9,7 +9,8 @@ let customerSalary;
 let selectedId;
 
 $(window).on('load',function () {
-    $('#btnCusSave').prop('disabled',true);
+    $("#btnCusUpdate").prop("disabled", true);
+    $("#btnCusDelete").prop("disabled", true);
 });
 
 function getAllCustomerForTextField() {
@@ -22,22 +23,44 @@ function getAllCustomerForTextField() {
 $('#btnCusSave').click(function () {
     if (checkAll()){
         saveCustomer();
+
     }else {
         alert('error');
     }
 });
 
-$("#btnCusGetAll").click(function () {
-    getAllCustomers();
+
+$("#btnCusDelete").click(function () {
+    if (checkAll()){
+        deleteCustomer();
+
+    } else {
+        alert('error');
+    }
 });
+
 
 $('#btnCusUpdate').click(function () {
 
     if (checkAll()){
         updateCustomer();
+
     } else {
         alert('error');
     }
+});
+$('#btnCusGetAll').click(function () {
+    getAllCustomers();
+    setDataTextField();
+    focusClick();
+
+});
+
+$('#btnClearCusTable').click(function () {
+    $('#tblCustomer').empty();
+    clearTextField();
+    disableTextField(false);
+
 });
 
 function saveCustomer() {
@@ -76,7 +99,8 @@ function saveCustomer() {
 
             loadAllData();
             clearTextField();
-            bindEvents()
+        bindEvents();
+            focusClick();
 
         }
 
@@ -112,9 +136,10 @@ function updateCustomer() {
             customerDB[index].salary = customerSalary;
 
             loadAllData();
-            clearTextField();
             $('#customerId').prop('disabled', true);
-            setDataTextField();
+            clearTextField();
+          bindEvents();
+            focusClick();
             Swal.fire('Saved!', '', 'success');
 
 
@@ -123,6 +148,43 @@ function updateCustomer() {
         }
 
 
+    });
+}
+
+function deleteCustomer() {
+
+    Swal.fire({
+        title: 'Do you want to delete?',
+        showDenyButton: true,
+        showCancelButton: true,
+        confirmButtonText: 'Delete',
+        denyButtonText: `Don't delete`,
+    }).then((result) => {
+        /* Read more about isConfirmed, isDenied below */
+        if (result.isConfirmed) {
+
+            let index = -1;
+
+            for (let customerObj of customerDB) {
+                if (customerObj.id == selectedId) {
+                    customerDB.splice(selectedId, 1);
+                }
+            }
+
+
+            loadAllData();
+            clearTextField();
+            bindEvents()
+            focusClick();
+
+
+
+            Swal.fire('Deleted!', '', 'success');
+
+
+        } else if (result.isDenied) {
+            Swal.fire('Not Delete', '', 'info')
+        }
     });
 }
 
@@ -186,3 +248,21 @@ function bindEvents() {
     })
 }
 
+function disableTextField(condition) {
+    $('#customerId').prop('disabled', condition);
+    $('#cusFirstName').prop('disabled', condition);
+    $('#cusLastName').prop('disabled', condition);
+    $('#cusAddress').prop('disabled', condition);
+    $('#cusSalary').prop('disabled', condition);
+
+}
+
+function focusClick() {
+    $('#tblCustomer > tr').on('click', function () {
+        $("#btnCusUpdate").prop("disabled", false);
+        disableTextField(false);
+        $("#btnCusDelete").prop("disabled", false);
+        $("#btnCusSave").prop("disabled", true);
+
+    });
+}

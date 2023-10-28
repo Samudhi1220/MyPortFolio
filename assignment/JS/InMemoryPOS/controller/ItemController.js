@@ -1,13 +1,16 @@
+
 let itemCode;
 let itemName;
 let itemPrice;
 let itemQty;
-let selectedItemCode
+let selectedItemId;
+
 $(window).on('load',function () {
-    $('#btnItemSave').prop('disabled',true);
+    $("#btnItemUpdate").prop("disabled", true);
+    $("#btnItemDelete").prop("disabled", true);
 });
 
-function getAllItemForTextField() {
+function getAllItemsForTextField() {
     itemCode = $('#itemCode').val();
     itemName = $('#itemName').val();
     itemPrice = $('#itemPrice').val();
@@ -15,24 +18,44 @@ function getAllItemForTextField() {
 
 }
 $('#btnItemSave').click(function () {
-    if (checkAllItem()){
+    if (checkAllItemReg()){
         saveItem();
+
     }else {
         alert('error');
     }
 });
 
-$("#btnGetAllItem").click(function () {
-   getAllItems()
+$("#btnItemDelete").click(function () {
+    if (checkAllItemReg()){
+        deleteItem();
+
+    } else {
+        alert('error');
+    }
 });
 
 $('#btnItemUpdate').click(function () {
 
-    if (checkAllItem()){
-     updateItem();
+    if (checkAllItemReg()){
+        updateItem();
+
     } else {
         alert('error');
     }
+});
+$('#btnGetAllItem').click(function () {
+    getAllItem();
+    setItemDataTextField();
+    focusItemClick();
+
+});
+
+$('#btnClearItemTable').click(function () {
+    $('#tblItem').empty();
+    clearItemTextField();
+    disableItemTextField(false);
+
 });
 
 function saveItem() {
@@ -49,7 +72,7 @@ function saveItem() {
 
         alert('already exist')
     }else {
-        getAllItemForTextField();
+        getAllItemsForTextField();
         let newItem = Object.assign({},item);
 
         newItem.code = itemCode;
@@ -71,14 +94,14 @@ function saveItem() {
 
         loadAllItemData();
         clearItemTextField();
-        bindEvent()
+        bindEvent();
+        focusItemClick();
 
     }
 
 }
-
 function updateItem() {
-    getAllItemForTextField();
+    getAllItemsForTextField();
 
     Swal.fire({
         title: 'Do you want to save the changes?',
@@ -87,29 +110,30 @@ function updateItem() {
         confirmButtonText: 'Save',
         denyButtonText: `Don't save`,
     }).then((result) => {
-
+        /* Read more about isConfirmed, isDenied below */
         if (result.isConfirmed) {
 
 
 
             let index = -1;
 
-            for (let itemObj of itemObj) {
-                if (itemObj.code == selectedItemCode) {
+            for (let itemObj of itemDB) {
+                if (itemObj.code == selectedItemId) {
                     index = itemDB.indexOf(itemObj);
                 }
             }
-
 
             itemDB[index].code = itemCode;
             itemDB[index].name = itemName;
             itemDB[index].price = itemPrice;
             itemDB[index].qty = itemQty;
 
+
             loadAllItemData();
-            clearItemTextField();
             $('#itemCode').prop('disabled', true);
-            setItemDataTextField();
+            clearItemTextField();
+            bindEvent();
+            focusItemClick();
             Swal.fire('Saved!', '', 'success');
 
 
@@ -118,6 +142,43 @@ function updateItem() {
         }
 
 
+    });
+}
+
+function deleteItem() {
+
+    Swal.fire({
+        title: 'Do you want to delete?',
+        showDenyButton: true,
+        showCancelButton: true,
+        confirmButtonText: 'Delete',
+        denyButtonText: `Don't delete`,
+    }).then((result) => {
+        /* Read more about isConfirmed, isDenied below */
+        if (result.isConfirmed) {
+
+            let index = -1;
+
+            for (let itemObj of itemDB) {
+                if (itemObj.code == selectedItemId) {
+                    itemDB.splice(selectedItemId, 1);
+                }
+            }
+
+
+            loadAllItemData();
+            clearItemTextField();
+            bindEvent()
+            focusItemClick();
+
+
+
+            Swal.fire('Deleted!', '', 'success');
+
+
+        } else if (result.isDenied) {
+            Swal.fire('Not Delete', '', 'info')
+        }
     });
 }
 
@@ -142,7 +203,7 @@ function setItemDataTextField(code,name,price,qty) {
     $('#itemQty').val(qty);
 
 }
-function getAllItems() {
+function getAllItem() {
 
     $("#tblItem").empty();
 
@@ -158,7 +219,6 @@ function getAllItems() {
                      <td>${name}</td>
                      <td>${price}</td>
                      <td>${qty}</td>
-                    
                     </tr>`;
 
         $("#tblItem").append(row);
@@ -166,6 +226,7 @@ function getAllItems() {
         bindEvent();
     }
 }
+
 function bindEvent() {
     $('#tblItem>tr').click(function () {
 
@@ -177,6 +238,25 @@ function bindEvent() {
 
         setItemDataTextField(code,name,price,qty);
         $('#itemCode').prop('disabled', true);
-        selectedItemCode = $('#itemCode').val();
+        selectedItemId = $('#itemCode').val();
     })
+}
+
+function disableItemTextField(condition) {
+    $('#itemCode').prop('disabled', condition);
+    $('#itemName').prop('disabled', condition);
+    $('#itemPrice').prop('disabled', condition);
+    $('#itemQty').prop('disabled', condition);
+
+
+}
+
+function focusItemClick() {
+    $('#tblItem > tr').on('click', function () {
+        $("#btnItemUpdate").prop("disabled", false);
+        disableItemTextField(false);
+        $("#btnItemDelete").prop("disabled", false);
+        $("#btnItemSave").prop("disabled", true);
+
+    });
 }

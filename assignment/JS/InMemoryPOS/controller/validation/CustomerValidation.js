@@ -100,8 +100,10 @@ function setBtn() {
     if (checkAll()) {
         $("#btnCusSave").prop("disabled", false);
         $("#btnCusUpdate").prop("disabled", false);
+
     } else {
         $("#btnCusSave").prop("disabled", true);
         $("#btnCusUpdate").prop("disabled", true);
+
     }
 }
