@@ -101,11 +101,13 @@ main > :first-child > :nth-child(2) {
     justify-content: right;
     width: 50%;
     position: absolute;
-    right: 250px;
+    right: 180px;
+
 }
 
 .me > img {
-    height: 500px;
+
+    width:500px;
 }
 
 .introduc > h5 {
@@ -979,49 +981,49 @@ main > :first-child > :nth-child(2) {
 }
 
 .gallery-raw1 > div:nth-child(1) {
-    background: url("/assest/img/WhatsApp Image 2023-09-20 at 11.45.51 PM (2).jpeg");
+    background: url("../assest/img/WhatsApp Image 2023-09-20 at 11.45.51 PM (2).jpeg");
     background-size: cover;
     background-position: center;
 }
 
 .gallery-raw1 > div:nth-child(2) {
-    background: url("/assest/img/WhatsApp Image 2023-09-22 at 5.17.42 PM.jpeg");
+    background: url("../assest/img/WhatsApp Image 2023-09-22 at 5.17.42 PM.jpeg");
     background-size: cover;
     background-position: center;
 }
 
 .gallery-raw1 > div:nth-child(3) {
-    background: url("/assest/img/WhatsApp Image 2023-09-22 at 5.33.15 PM.jpeg");
+    background: url("../assest/img/WhatsApp Image 2023-09-22 at 5.33.15 PM.jpeg");
     background-size: cover;
     background-position: center;
 }
 
 .gallery-raw1 > div:nth-child(4) {
-    background: url("/assest/img/WhatsApp Image 2023-09-22 at 5.33.16 PM.jpeg");
+    background: url("../assest/img/WhatsApp Image 2023-09-22 at 5.33.16 PM.jpeg");
     background-size: cover;
     background-position: center;
 }
 
 .gallery-raw2 > div:nth-child(1) {
-    background: url("/assest/img/WhatsApp Image 2023-09-22 at 5.33.16 PM (1).jpeg");
+    background: url("../assest/img/WhatsApp Image 2023-09-22 at 5.33.16 PM (1).jpeg");
     background-size: cover;
     background-position: center;
 }
 
 .gallery-raw2 > div:nth-child(2) {
-    background: url("/assest/img/WhatsApp Image 2023-09-22 at 5.33.17 PM.jpeg");
+    background: url("../assest/img/WhatsApp Image 2023-09-22 at 5.33.17 PM.jpeg");
     background-size: cover;
     background-position: center;
 }
 
 .gallery-raw2 > div:nth-child(3) {
-    background: url("/assest/img/WhatsApp Image 2023-09-22 at 5.33.17 PM (1).jpeg");
+    background: url("../assest/img/WhatsApp Image 2023-09-22 at 5.33.17 PM (1).jpeg");
     background-size: cover;
     background-position: center;
 }
 
 .gallery-raw2 > div:nth-child(4) {
-    background: url("/assest/img/WhatsApp Image 2023-09-22 at 5.33.17 PM (2).jpeg");
+    background: url("../assest/img/WhatsApp Image 2023-09-22 at 5.33.17 PM (2).jpeg");
     background-size: cover;
     background-position: center;
 }
@@ -1089,6 +1091,7 @@ main > :first-child > :nth-child(2) {
 .services div > img {
     width: 70px;
     padding-top: 20px;
+    padding-left: 20px;
 }
 
 .services h2 {
